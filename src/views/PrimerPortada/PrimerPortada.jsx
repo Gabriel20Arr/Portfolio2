@@ -12,7 +12,7 @@ export const PrimerPortada = () => {
         <div className={styles.CText}>
             <div className={styles.CText2}>
                 <p className={styles.first}>
-                    <span className={styles.first0}>Hola!</span>
+                    <span className={styles.first0}>Hola, bienvenido!!</span>
                     <br />
                     Soy Gabriel Arroyo
                     <br/>

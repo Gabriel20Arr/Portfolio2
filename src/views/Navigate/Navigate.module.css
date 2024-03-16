@@ -1,34 +1,40 @@
 .Cnav{
-    max-width: 100%;
+    min-width: 100%;
     height: 5.5em;
     
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: absolute;
-    top: 0;
+    /* position: absolute;
+    top: 0; */
 
-    z-index: 999;
 }
 
 /* Estilos para pantallas más grandes (mayores o igual a 390px) */
 .navbar {
-    max-width: 100%;
-    height: 5.5em;
+    z-index: 999;
+
+    width: 70%;
+    min-height: 5em;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    padding: 0 30px;
-
-    /* background-color: #fff; */
+    /* padding: 0 30px; */
+    padding-bottom: 10px;
+    
+    background-color: #fff;
     
     border-bottom: 2px solid #eee;
     font-weight: bold;
 
     position: fixed;
+
+    -webkit-box-shadow: 0px 19px 15px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 19px 15px -14px rgba(0,0,0,0.75);
+    box-shadow: 0px 19px 15px -14px rgba(0,0,0,0.75);
 }
 
 .logo {
@@ -153,7 +159,7 @@
         border-bottom: 2px solid #eee;
         font-weight: bold;
     }
-    
+      
     .imgMenu{
         display: block;
         
@@ -171,12 +177,12 @@
         
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
 
         padding: 20px;
 
-        min-width: 83%;
+        min-width: 85%;
         min-height: 50vh;
 
         position: absolute;
@@ -226,28 +232,28 @@
     }
 
     /* Define la animación de apertura del menú */
-@keyframes slidebottomin {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
+    @keyframes slidebottomin {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
 
-/* Define la animación de cierre del menú */
-@keyframes slidebottomout {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
+    /* Define la animación de cierre del menú */
+    @keyframes slidebottomout {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
     }
-    100% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
 
 
     .navItem2{

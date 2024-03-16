@@ -8,7 +8,7 @@ export const Experiencia = () => {
         <div className={styles.ContainerExp}>
             <div className={styles.CExp1}>
               <span className={styles.spanR}></span>
-              <span className={styles.titleExp}>Frelancer <span className={styles.date}>03 Oct - 02 Nov</span></span>
+              <span className={styles.titleExp}>Freelancer <span className={styles.date}>03 Oct - 02 Nov</span></span>
               un desarrollador Full Stack argentino con amplia experiencia en todas las áreas del desarrollo web.
               Mi enfoque se centra en crear soluciones sólidas y escalables utilizando tecnologías modernas y prácticas ágiles.
             </div>
@@ -22,7 +22,7 @@ export const Experiencia = () => {
 
             <div className={styles.CExp1}>
               <span className={styles.spanR}></span>
-              <span className={styles.titleExp}>Frelancer <span className={styles.date}>03 Oct - 02 Nov</span></span>
+              <span className={styles.titleExp}>Freelancer <span className={styles.date}>03 Oct - 02 Nov</span></span>
               un desarrollador Full Stack argentino con amplia experiencia en todas las áreas del desarrollo web.
               Mi enfoque se centra en crear soluciones sólidas y escalables utilizando tecnologías modernas y prácticas ágiles.
             </div>

@@ -60,12 +60,8 @@ const toggleMenu = () => {
 
 
         {/* Menu desplegable */}
-        {  !showMenu ?     
-          <img  src={imgMenu} alt='' className={styles.imgMenu} onClick={toggleMenu}/> 
-            :
-          <img  src={imgMenu2} alt='' className={styles.imgMenu} onClick={toggleMenu}/>
-        }
-
+        <img  src={!showMenu ? imgMenu : imgMenu2} alt='' className={styles.imgMenu} onClick={toggleMenu}/> 
+          
         { showMenu ? 
           <ul  className={styles.navLinks2}>
           <li className={styles.navItem2}>
