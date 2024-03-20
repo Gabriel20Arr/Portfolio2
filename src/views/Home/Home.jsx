@@ -4,6 +4,7 @@ import styles from "./Home.module.css"
 import { Navigate } from '../Navigate/Navigate'
 import { PrimerPortada } from '../PrimerPortada/PrimerPortada'
 import { Experiencia } from "../Experiencia/Experiencia"
+import { Proyectos } from '../Proyectos/Proyectos'
 import { SobreMi } from '../SobreMi/SobreMi'
 
 export const Home = () => {
@@ -15,7 +16,9 @@ export const Home = () => {
 
         <PrimerPortada />
         <Experiencia />
+        <Proyectos />
         <SobreMi />
+        
         <footer>
             <span>FOOTER</span>
         </footer>

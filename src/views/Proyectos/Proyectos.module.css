@@ -1,0 +1,177 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    margin-top: 5em;
+    padding: 0 20px;
+    
+    min-width: 100%;
+    min-height: 100vh;
+
+    border-radius: 20px;    
+    /* border: 1px solid #eeee; */
+    /* background-color: #fcf8f8ee; */
+}
+
+.container2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    margin-top: 5em;
+    
+    max-width: 100%;
+
+    /* border: 1px solid blue; */
+}
+
+.containerCart{
+    display: flex;
+    /* align-items: flex-start; */
+    /* justify-content: space-evenly; */
+
+    padding-left: 50px;
+    
+    max-width: 100%;
+    max-height: 100%;
+
+
+    /* background-color: gray; */
+    /* border: 1px solid gray; */
+}
+
+.cart{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 5px;
+    
+    min-height: 350px;
+    max-width: 360px;
+
+    padding: 10px;
+    
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    background-color: #f5f5f5;
+}
+
+/* img proyectos botones */
+.containerBtn{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f5f5f5;
+
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Btn{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+
+    width: 75px;
+    height: 50px;
+    
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+
+.imgB{
+    width: 75px;
+    height: 50px;
+
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    /* background-color: blue; */
+}
+
+
+/* Imagenes de los proyectos */
+.imgP{
+    width: 360px;
+    height: 200px;
+
+    /* margin-bottom: 10px; */
+
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+/* carrusel */
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carouselSlide {
+    display: flex;
+    overflow: hidden;
+    width: 400px; 
+    
+    /* border: 5px solid greenyellow; */
+    position: relative;
+    transition: transform 0.5s ease; 
+}
+
+.slide {
+    display: none;  
+}
+
+.slideActive {
+    display: block;
+}
+
+.carouselslide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev{
+    /* background-color: red; */
+    border: 1px solid black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    left: 0;
+    top: 40%;
+    
+    rotate: 180deg;
+    
+    padding: 5px;
+    margin: 0;
+}
+
+.next{
+    /* background-color: red; */
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    right: 0;
+    top: 40%;
+    
+    padding: 5px;
+    margin: 0;
+}
+
+
+.ImgBtn{
+    width: 10px;
+    height: 10px;
+}
