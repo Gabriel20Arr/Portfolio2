@@ -14,7 +14,9 @@
     flex-direction: column;
     align-items: center;
 }
-
+.t{
+    position: sticky;
+}
 .CExp1{
     /* background-color: greenyellow; */
     border-left: 1px solid #eeee;
@@ -28,6 +30,10 @@
     align-items: flex-start;
 
     position: relative;
+    font-size: 20px;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .spanR{
@@ -37,12 +43,14 @@
     
     background-color: #eeee;
     border-radius: 50%;
+
     
     height: 10px;
     width: 10px;
 }
 
 .titleExp {
+    
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -52,6 +60,7 @@
     margin: none;
     padding: none;
 
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     font-size: 20px;
 }

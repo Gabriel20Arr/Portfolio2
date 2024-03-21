@@ -5,10 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* position: absolute;
-    top: 0; */
-
 }
 
 /* Estilos para pantallas más grandes (mayores o igual a 390px) */
@@ -22,19 +18,20 @@
     justify-content: space-between;
     align-items: center;
     
-    /* padding: 0 30px; */
-    padding-bottom: 10px;
+    padding: 5px 10px;
     
     background-color: #fff;
     
-    border-bottom: 2px solid #eee;
+    /* border-bottom: 2px solid #eee; */
     font-weight: bold;
 
-    position: fixed;
+    position: absolute;
+    top: 0;
+    position: fixed;    
 
-    -webkit-box-shadow: 0px 19px 15px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 19px 15px -14px rgba(0,0,0,0.75);
-    box-shadow: 0px 19px 15px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 15px 15px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 15px -14px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px 15px -14px rgba(0,0,0,0.75);
 }
 
 .logo {
@@ -78,19 +75,25 @@
     cursor: pointer;
     outline: none;
     margin-right: 14px;
+    padding: none;
 
-    filter: none;
+    border: none;
+    transition: transform 1s ease-in-out;
 }
 
 .navItem button {
     background-color: #fff;
-    text-transform: uppercase;
     cursor: pointer;
     outline: none;
     position: relative;
+    font-size: 12px;
     font-weight: bold;
-
-    filter: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    min-height: 100%;
+    width: fit-content;
+    
+    border: none;
 }
 
 .navItemEnd {
@@ -100,33 +103,52 @@
     /* background-color: #fff; */
     cursor: pointer;
     outline: none;
+    padding: none;
+
     border: none;
+    transition: transform 1s ease-in-out;
 }
 
 
 .navItem button:hover {
-    /* background-color: #fff; */
-    border: 1px solid black;
     cursor: pointer;
     outline: none;
-    position: relative;
+
+    transform: scale(1.1);
+    
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
 }
 
 .navItemEnd button {
     background-color: #fff;
-    text-transform: uppercase;
     cursor: pointer;
     outline: none;
     position: relative;
+    font-size: 12px;
     font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    min-height: 100%;
+    width: fit-content;
+    
+    border: none;
 }
 
 .navItemEnd button:hover {
-    /* background-color: #fff; */
-    border: 1px solid black;
     cursor: pointer;
     outline: none;
-    position: relative;
+
+    transform: scale(1.1);
+    
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
 }
 
 .imgMenu{
@@ -144,9 +166,9 @@
     .navLinks{
         display: none;
     }
-
+    
     .navbar {
-        min-width: 70%;
+        width: 70%;
         height: 5.5em;
         
         display: flex;
@@ -172,7 +194,7 @@
     }
 
     .navLinks2{
-        background-color: #eeee;
+        background-color: #eeeeeee4;
         border: 1px solid #eee;
         
         display: flex;
@@ -181,16 +203,24 @@
         align-items: center;
 
         padding: 20px;
+        /* padding-right: 60px; */
 
-        min-width: 85%;
+        width: 93%;
         min-height: 50vh;
+
+        list-style: none;
 
         position: absolute;
         top: 4.6em;
+        left: 0;
 
         z-index: 990;
 
-        animation:slide-bottom 0.8s linear both
+        animation: slide-bottom 0.8s linear both;
+
+        -webkit-box-shadow: 0px 16px 37px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 16px 37px -10px rgba(0,0,0,0.75);
+        box-shadow: 0px 16px 37px -10px rgba(0,0,0,0.75);
     }
       
 
@@ -207,13 +237,16 @@
         justify-content: space-between;
         align-items: center;
 
+        list-style: none;
+        
         padding: 20px;
 
-        min-width: 83%;
+        min-width: 93%;
         min-height: 50vh;
 
         position: absolute;
         top: 4.6em;
+        left: 0;
 
         z-index: 990;
         
@@ -256,42 +289,84 @@
     }
 
 
-    .navItem2{
-        background-color: white;
-        margin-bottom: 15px;
-        
-        width: 200px;
-        height: 50px;
-        
-        display: flex;
-        align-items: center;
+    .navItem2 {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: #fff;
+        cursor: pointer;
+        outline: none;
+        margin-right: 14px;
+        padding: none;
+
+        text-align: center;
+
+        width: 150px;
+        height: 30px;
 
         border-radius: 20px;
+        border: none;
+        transition: transform 1s ease-in-out;
     }
 
-    .navItem2 button {
-        background-color: white;
-        
-        min-width: 100%;
-        min-height: 100%;
+    .navItem22 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 12px;
+        background-color: #fff;
+        padding: none;
 
-        filter: none;
-    }
-    
-    .navItemEnd2{
+        text-align: center;
+
         width: 200px;
-        height: 50px;
-        
-        display: flex;
-        align-items: center;
+        height: 30px;
 
         border-radius: 20px;
+        border: none;
+        transition: transform 1s ease-in-out;
     }
     
-    .navItemEnd2 button {
-        background-color: white;
+    .navItemEnd2 {
+        cursor: pointer;
+        outline: none;
+        margin-right: 14px;
+        padding: none;
 
-        min-width: 100%;
-        min-height: 100%;
+        text-align: center;
+
+        width: 150px;
+        height: 30px;
+
+        border-radius: 20px;
+        border: none;
+        transition: transform 1s ease-in-out;
+    }
+    
+    
+    .navItem2 button:hover {
+        cursor: pointer;
+        outline: none;
+    
+        transform: scale(1.1);
+        
+        border-radius: 20px;
+    
+        -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+    }
+    
+    
+    .navItemEnd2 button:hover {
+        cursor: pointer;
+        outline: none;
+    
+        transform: scale(1.1);
+        
+        border-radius: 20px;
+    
+        -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
     }
 }

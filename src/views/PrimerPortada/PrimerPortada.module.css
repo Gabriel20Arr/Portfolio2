@@ -107,7 +107,7 @@
     /* border: 1px solid blue; */
 
     height: 550px;
-    width: 50%;
+    max-width: 50%;
 
     display: flex;
     align-items: center;
@@ -115,23 +115,34 @@
     
     /* background-image: url("/Fiesta egreso 2020-16.jpg");
     background-size: cover; */
-
     filter: grayscale(100%);
+    transition: transform .9s ease-in-out;
+}
+
+.ImgP{
+    /* border: 1px solid #eeee;
+    border-radius: 50%; */
+    
+    filter: drop-shadow( 9px 9px 12px rgba(0,0,0,0.75));
+    
+    mask-image: linear-gradient(to top, transparent 0%, white 20%);
+    /* background: radial-gradient(transparent at bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);  */
+    
+    
+    height: 360px;
+    width: 360px;
+    
 }
 
 .CImg:hover {
-    /* height: 270px; */
+    transform: scale(1.2);
+    filter: drop-shadow( 9px 9px 12px rgba(0,0,0,0.75));
+
+    mask-image: linear-gradient(to top, transparent 0%, white 20%);
     
     filter: grayscale(0%);
 }
 
-.ImgP{
-    border: 1px solid #eeee;
-    border-radius: 50%;
-    
-    height: 360px;
-    width: 360px;
-}
 
 @media screen and (max-width: 900px) {
     .ContenedorHome{
@@ -197,7 +208,7 @@
     }
     
     .CImg{
-        border-radius: 50%;
+        /* border-radius: 50%; */
     
         max-height: 250px; 
         max-width: 50%;
@@ -258,8 +269,8 @@
     }
     
     .ImgP{
-        border: 1px solid #eeee;
-        border-radius: 50%;
+        /* border: 1px solid #eeee;
+        border-radius: 50%; */
         
         height: 270px;
         width: 270px;
@@ -328,18 +339,7 @@
         font-size: 22px;
     }
     
-    .CImg{
-        border-radius: 50%;
     
-        max-height: 250px; 
-        max-width: 50%;
-        
-        /* background-image: url("/Fiesta egreso 2020-16.jpg");
-        background-size: cover; */
-    
-        filter: grayscale(100%);
-    
-    }
     
     .CImg:hover {
         height: 270px;
@@ -391,13 +391,29 @@
         transform: scale(1.1);
         color: #fff;
     }
+
+    .CImg{
+        /* border-radius: 50%; */
+    
+        max-height: 250px; 
+        max-width: 50%;
+        
+        /* background-image: url("/Fiesta egreso 2020-16.jpg");
+        background-size: cover; */
+    
+        filter: grayscale(100%);
+    
+    }
     
     .ImgP{
-        border: 1px solid #eeee;
-        border-radius: 50%;
+        /* border: 1px solid #eeee;
+        border-radius: 50%; */
         
         height: 270px;
         width: 270px;
+
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     }
 }
 @media screen and (max-width: 720px) {
@@ -411,7 +427,7 @@
         justify-content: center;
         align-items: center;
         
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
     
     .CText{

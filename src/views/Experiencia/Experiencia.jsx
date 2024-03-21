@@ -4,7 +4,7 @@ import styles from "./Experiencia.module.css"
 export const Experiencia = () => {
   return (
     <div id="exp" className={styles.exp}>
-        <h2>EXPERIENCIAS</h2>
+        <h2 className={styles.t}>EXPERIENCIAS</h2>
         <div className={styles.ContainerExp}>
             <div className={styles.CExp1}>
               <span className={styles.spanR}></span>

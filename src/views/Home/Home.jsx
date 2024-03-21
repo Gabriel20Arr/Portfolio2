@@ -6,6 +6,7 @@ import { PrimerPortada } from '../PrimerPortada/PrimerPortada'
 import { Experiencia } from "../Experiencia/Experiencia"
 import { Proyectos } from '../Proyectos/Proyectos'
 import { SobreMi } from '../SobreMi/SobreMi'
+import { Contact } from "../Contact/Contact"
 
 export const Home = () => {
   return (
@@ -18,10 +19,7 @@ export const Home = () => {
         <Experiencia />
         <Proyectos />
         <SobreMi />
-        
-        <footer>
-            <span>FOOTER</span>
-        </footer>
+        <Contact />
     </div>
   )
 }

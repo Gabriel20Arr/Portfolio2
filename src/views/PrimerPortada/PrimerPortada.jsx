@@ -1,10 +1,11 @@
 import React from 'react'
 
 import styles from "./PrimerPortada.module.css"
-import imgPortada from "/Fiesta egreso 2020-16.jpg"
-// import imgGithub from "/logo-github.png"
-// import imgLinkedin from "/logo-linkedin.png"
-// import imgInstagram from "/instagram.png"
+// import imgPortada from "/photo-egreso.webp"
+import imgPortada from "/12-transformed.png"
+// import imgPortada from "/photo-egreso-edit.png"
+// import imgPortada from "/photo-egreso-edit-2.png"
+
 
 export const PrimerPortada = () => {
   return (

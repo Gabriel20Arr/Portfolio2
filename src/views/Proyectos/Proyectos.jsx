@@ -14,8 +14,8 @@ export const Proyectos = () => {
     }
 
     const images =  [
-        "/imgProyectos/Screenshot 2023-07-15 180709.png", 
-        "/imgProyectos/Screenshot 2023-07-15 180735.png"
+        "/img-proyectos-webp/market.webp", 
+        "/img-proyectos-webp/marketX2.webp"
     ]
 
     const nextSlide1 = () => {
@@ -27,8 +27,8 @@ export const Proyectos = () => {
     };
 
     const images2 = [
-        "/imgProyectos/Screenshot 2024-03-19 092902.png",
-        "/imgProyectos/Screenshot 2024-03-19 094242.png"
+        "/img-proyectos-webp/to-do.webp",
+        "/img-proyectos-webp/to-do-2.webp"
     ]
 
     const nextSlide2 = () => {
@@ -40,8 +40,8 @@ export const Proyectos = () => {
     };
 
     const images3 = [
-        "/imgProyectos/Foods.png",
-        "/imgProyectos/menuFoods.png"
+        "/img-proyectos-webp/Foods.webp",
+        "/img-proyectos-webp/menuFoods.webp"
     ]
 
     const nextSlide3 = () => {
@@ -59,17 +59,17 @@ export const Proyectos = () => {
         <div className={styles.container2}>
             <div className={styles.containerBtn}>
                 <button className={styles.Btn} onClick={() => handlerSelectProyect(1)}>
-                    <img src={"/imgProyectos/Screenshot 2023-07-15 180709.png" } alt='' className={styles.imgB}/>
+                    <img src={"/img-proyectos-webp/market.webp"} alt='' className={styles.imgB}/>
                 </button>
                 <button className={styles.Btn} onClick={() => handlerSelectProyect(2)}>
-                    <img src={"/imgProyectos/Screenshot 2024-03-19 092902.png"} alt='' className={styles.imgB}/>
+                    <img src={"/img-proyectos-webp/to-do.webp"} alt='' className={styles.imgB}/>
                 </button>
                 <button className={styles.Btn} onClick={() => handlerSelectProyect(3)}>
-                    <img src={"/imgProyectos/Foods.png"} alt='' className={styles.imgB}/>
+                    <img src={"/img-proyectos-webp/Foods.webp"} alt='' className={styles.imgB}/>
                 </button>
-                <button className={styles.Btn} onClick={() => handlerSelectProyect(4)}>
+                {/* <button className={styles.Btn} onClick={() => handlerSelectProyect(4)}>
                     <img src={"/imgProyectos/Screenshot 2024-03-19 094242.png"} alt='' className={styles.imgB}/>
-                </button>
+                </button> */}
             </div>
 
             <div className={styles.containerCart}>
