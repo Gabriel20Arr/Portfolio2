@@ -14,6 +14,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #fffcfc;
+  /* background: url("/white-low-poly-background-338.png");
+  background-size: contain; */
 }
 
 

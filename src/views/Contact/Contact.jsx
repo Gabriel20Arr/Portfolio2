@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Link } from "react-router-dom"
 import styles from "./Contact.module.css";
 
 import emailjs from '@emailjs/browser';
@@ -72,7 +73,7 @@ export const Contact = () => {
 
   return (
     <div id='contacto' className={styles.contact}>
-        <h1 className={styles.TittleContacto}>Contacto</h1>
+        <span className={styles.TittleContacto}>Contacto</span>
         <div className={styles.contact1}>
           <form className={styles.contactForm} ref={form} onSubmit={sendEmail}>
             <div className={styles.ContainerInputs}>
@@ -97,9 +98,24 @@ export const Contact = () => {
             <button type="submit" value="Send" className={styles.btn}>Enviar</button>
           </form>
           <div className={styles.imgContact}>
-            <img src={imgLinkedin} alt='' className={styles.imgC1}/>
-            <img src={imgGithub} alt='' className={styles.imgC2}/>
-            <img src={imgInstagram} alt='' className={styles.imgC3}/>
+            <Link to={"https://www.linkedin.com/in/2002-gabriel-arroyo/"}>
+              <div className={styles.container}>
+                <img src={imgLinkedin} alt='' className={styles.imgC1}/>
+                <span className={styles.nameLogo}>Linkedin</span>
+              </div>
+            </Link>
+            <Link to={"https://github.com/Gabriel20Arr"}>
+              <div className={styles.container}>
+                <img src={imgGithub} alt='' className={styles.imgC2}/>
+                <span className={styles.nameLogo}>Github</span>
+              </div>
+            </Link>
+            <Link to={"https://www.instagram.com/gabrielarroyo?igsh=MTFkemV6bnY2OXAyNQ%3D%3D&utm_source=qr"}>
+              <div className={styles.container}>
+                <img src={imgInstagram} alt='' className={styles.imgC3}/>
+                <span className={styles.nameLogo}>Instagram</span>
+              </div>  
+            </Link>
           </div>
         </div>
     </div>

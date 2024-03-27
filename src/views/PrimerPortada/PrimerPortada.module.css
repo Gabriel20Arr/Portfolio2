@@ -1,34 +1,40 @@
 .ContenedorHome{
-    margin-top: 5em;
+    margin: 0;
 
-    max-height: 400px;
     width: 100%;
+    max-height: auto;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     
     /* border: 2px solid blue; */
+    position: relative;
 }
 
 .CText{
-    /* background-color: red; */
     /* border: 1px solid green; */
 
-    height: 550px;
-    width: 50%;
+    height: fit-content;
+    max-width: 65%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    padding: auto 0;
+
+    z-index: 2;
 }
 
 .CText2{
-    /* background-color: red; */
     /* border: 1px solid red; */
 
-    height: 240px;
-    width: 100%;
+    max-width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -36,32 +42,32 @@
 }
 
 .first0{
-    /* background-color: red; */
-    
+    color: #fff;
     font-weight: bolder;
-    font-size: 40px;
+    font-size: 60px;
+    font-family: "Karantina", system-ui;
+    font-style: normal;
 }
 .first{
-    /* background-color: red; */
-    
+    color: #fff;
+    /* color: black; */
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .second{
-    /* background-color: red; */
     color: #0984e3;
-    
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 38px;
+    font-weight: bolder;
+    font-size: 45px;
+    font-family: "Karantina", system-ui;
+    font-style: normal;
 }
 
 .CLogo{
     /* background-color: red; */
 
     width: 100%;
-    height: 30px;
+    height: fit-content;
 
     display: flex;
     align-items: center;
@@ -74,10 +80,7 @@
     background-color: #0984e3;
     color: #fff;
     
-    border: 1px solid black;
-    border-radius: 5px;
-
-    height: 25px;
+    height: 30px;
     width: 60px;
 
     display: flex;
@@ -89,33 +92,35 @@
 
     padding: 2px 8px;
 
-    box-shadow: 2px -2px 0px black;
+    box-shadow: 2px -2px 0px #fff;
+    border-radius: 5px;
 
     /* rotate: -5deg; */
 
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .miCv:hover{
     transform: scale(1.1);
     color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 60px;
 }
 
-/* img. Portda */
+/* img. Portada */
 
 .CImg{
     /* border: 1px solid blue; */
 
-    height: 550px;
-    max-width: 50%;
+    width: 100%;
+    max-height: 50%;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    
-    /* background-image: url("/Fiesta egreso 2020-16.jpg");
-    background-size: cover; */
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     transition: transform .9s ease-in-out;
 }
 
@@ -125,110 +130,79 @@
     
     filter: drop-shadow( 9px 9px 12px rgba(0,0,0,0.75));
     
-    mask-image: linear-gradient(to top, transparent 0%, white 20%);
-    /* background: radial-gradient(transparent at bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);  */
+    /* mask-image: linear-gradient(to top, transparent 0%, rgb(255, 255, 255) 70%); */
     
-    
-    height: 360px;
-    width: 360px;
+    width: 100%;
+    max-height: 400px;
     
 }
 
 .CImg:hover {
-    transform: scale(1.2);
-    filter: drop-shadow( 9px 9px 12px rgba(0,0,0,0.75));
+    /* transform: scale(1.2); */
+    /* filter: drop-shadow( 9px 9px 12px rgba(0,0,0,0.75)); */
 
-    mask-image: linear-gradient(to top, transparent 0%, white 20%);
+    /* mask-image: linear-gradient(to top, transparent 0%, white 20%); */
     
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
 }
-
 
 @media screen and (max-width: 900px) {
-    .ContenedorHome{
-        margin-top: 5em;
-    
-        min-height: 400px;
-        max-width: 100%;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        /* border: 2px solid blue; */
-    }
-    
     .CText{
-        /* background-color: red; */
-        /* border: 1px solid red; */
-        height: 270px;
-        max-width: 50%;
+        /* border: 1px solid green; */
+    
+        height: fit-content;
+        max-width: 65%;
     
         display: flex;
         flex-direction: column;
         justify-content: center;
     
+        position: absolute;
+        top: 40px;
+        left: 50px;
+    
+        padding: auto 0;
+    
+        z-index: 2;
     }
     
     .CText2{
-        /* background-color: red; */
         /* border: 1px solid red; */
-        height: fit-content;
-        width: 270px;
+    
+        max-width: 100%;
     
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
-    
-        margin-right: 60px;
+        justify-content: center;
     }
     
     .first0{
-        /* background-color: red; */
-        
-        /* font-family: 'Times New Roman', Times, serif; */
+        color: #fff;
         font-weight: bolder;
-        font-size: 29px;
+        font-size: 40px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
     }
     .first{
-        /* background-color: red; */
-        
-        /* font-family: 'Courier New', Courier, monospace; */
+        color: #fff;
+        /* color: black; */
         font-weight: bold;
-        font-size: 19px;
+        font-size: 20px;
     }
     
     .second{
-        /* background-color: red; */
         color: #0984e3;
-        
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        font-size: 23px;
-    }
-    
-    .CImg{
-        /* border-radius: 50%; */
-    
-        max-height: 250px; 
-        max-width: 50%;
-        
-        /* background-image: url("/Fiesta egreso 2020-16.jpg");
-        background-size: cover; */
-    
-        filter: grayscale(100%);
-    
-    }
-    
-    .CImg:hover {
-        filter: grayscale(0%);
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
     }
     
     .CLogo{
         /* background-color: red; */
     
         width: 100%;
-        height: 30px;
+        height: fit-content;
     
         display: flex;
         align-items: center;
@@ -241,265 +215,8 @@
         background-color: #0984e3;
         color: #fff;
         
-        border: 1px solid black;
-        border-radius: 5px;
-    
-        height: 25px;
-        width: 60px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        font-weight: bold;
-        font-size: 15px;
-    
-        padding: 2px 8px;
-    
-        box-shadow: 2px -2px 0px black;
-    
-        /* rotate: -5deg; */
-    
-        transition: transform 0.8s ease-in-out;
-    }
-    
-    .miCv:hover{
-        transform: scale(1.1);
-        color: #fff;
-    }
-    
-    .ImgP{
-        /* border: 1px solid #eeee;
-        border-radius: 50%; */
-        
-        height: 270px;
-        width: 270px;
-    }
-}
-@media screen and (max-width: 820px) {
-    .ContenedorHome{
-        margin-top: 5em;
-    
-        min-height: 400px;
-        max-width: 100%;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        /* border: 2px solid red; */
-    }
-    
-    .CText{
-        /* background-color: red; */
-        /* border: 1px solid red; */
-        height: 270px;
-        max-width: 50%;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    }
-    
-    .CText2{
-        /* background-color: red; */
-        /* border: 1px solid red; */
-        height: fit-content;
-        width: 270px;
-    
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-    
-        margin-right: 60px;
-    }
-    
-    .first0{
-        /* background-color: red; */
-        
-        /* font-family: 'Times New Roman', Times, serif; */
-        font-weight: bolder;
-        font-size: 25px;
-    }
-    .first{
-        /* background-color: red; */
-        
-        /* font-family: 'Courier New', Courier, monospace; */
-        font-weight: bold;
-        font-size: 15px;
-    }
-    
-    .second{
-        /* background-color: red; */
-        color: #0984e3;
-        
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        font-size: 22px;
-    }
-    
-    
-    
-    .CImg:hover {
-        height: 270px;
-        width: 270px;
-        
-        filter: grayscale(0%);
-    }
-    
-    .CLogo{
-        /* background-color: red; */
-    
-        width: 100%;
-        height: 30px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    
-        /* margin-left: 70px; */
-    }
-    
-    .miCv{
-        background-color: #0984e3;
-        color: #fff;
-        
-        border: 1px solid black;
-        border-radius: 5px;
-    
-        height: 25px;
-        width: 60px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        font-weight: bold;
-        font-size: 15px;
-    
-        padding: 2px 8px;
-    
-        box-shadow: 2px -2px 0px black;
-    
-        /* rotate: -5deg; */
-    
-        transition: transform 0.8s ease-in-out;
-    }
-    
-    .miCv:hover{
-        transform: scale(1.1);
-        color: #fff;
-    }
-
-    .CImg{
-        /* border-radius: 50%; */
-    
-        max-height: 250px; 
-        max-width: 50%;
-        
-        /* background-image: url("/Fiesta egreso 2020-16.jpg");
-        background-size: cover; */
-    
-        filter: grayscale(100%);
-    
-    }
-    
-    .ImgP{
-        /* border: 1px solid #eeee;
-        border-radius: 50%; */
-        
-        height: 270px;
-        width: 270px;
-
-
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-}
-@media screen and (max-width: 720px) {
-    .ContenedorHome{
-        margin-top: 5em;
-    
-        min-height: 400px;
-        max-width: 100%;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        /* border: 2px solid red; */
-    }
-    
-    .CText{
-        /* background-color: red; */
-        /* border: 1px solid red; */
-        height: 270px;
-        max-width: 50%;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    }
-    
-    .CText2{
-        /* background-color: red; */
-        /* border: 1px solid red; */
-        height: fit-content;
-        width: 270px;
-    
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-    
-        margin-right: 60px;
-    }
-    
-    .first0{
-        /* background-color: red; */
-        
-        font-weight: bolder;
-        font-size: 19px;
-    }
-    .first{
-        /* background-color: red; */
-        
-        /* font-family: 'Courier New', Courier, monospace; */
-        font-weight: bold;
-        font-size: 11px;
-    }
-    
-    .second{
-        /* background-color: red; */
-        color: #0984e3;
-        
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
-        font-size: 19px;
-    }
-
-    .CLogo{
-        /* background-color: red; */
-    
-        width: 100%;
-        height: 30px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    
-        /* margin-left: 70px; */
-    }
-    
-    .miCv{
-        background-color: #0984e3;
-        color: #fff;
-        
-        border: 1px solid black;
-        border-radius: 5px;
-    
         height: 20px;
-        width: 50px;
+        width: 40px;
     
         display: flex;
         align-items: center;
@@ -510,41 +227,225 @@
     
         padding: 2px 8px;
     
-        box-shadow: 2px -2px 0px black;
+        box-shadow: 2px -2px 0px #fff;
+        border-radius: 5px;
     
         /* rotate: -5deg; */
     
-        transition: transform 0.8s ease-in-out;
+        transition: transform 0.5s ease-in-out;
     }
     
     .miCv:hover{
         transform: scale(1.1);
         color: #fff;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 20px;
+        width: 40px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .CText{
+        /* border: 1px solid green; */
+    
+        height: fit-content;
+        max-width: 65%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        position: absolute;
+        top: 20px;
+        left: 50px;
+    
+        padding: auto 0;
+    
+        z-index: 2;
     }
     
-    .CImg{
-        border-radius: 50%;
+    .CText2{
+        /* border: 1px solid red; */
     
-        max-height: 220px; 
-        max-width: 50%;
+        max-width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .first0{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+    }
+    .first{
+        color: #fff;
+        /* color: black; */
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .second{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+    }
+    
+    .CLogo{
+        /* background-color: red; */
+    
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+        /* margin-left: 70px; */
+    }
+    
+    .miCv{
+        background-color: #0984e3;
+        color: #fff;
         
-        /* background-image: url("/Fiesta egreso 2020-16.jpg");
-        background-size: cover; */
+        height: 20px;
+        width: 40px;
     
-        filter: grayscale(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     
+        font-weight: bold;
+        font-size: 12px;
+    
+        padding: 2px 8px;
+    
+        box-shadow: 2px -2px 0px #fff;
+        border-radius: 5px;
+    
+        /* rotate: -5deg; */
+    
+        transition: transform 0.5s ease-in-out;
     }
     
-    .CImg:hover {
-        filter: grayscale(0%);
+    .miCv:hover{
+        transform: scale(1.1);
+        color: #fff;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        height: 20px;
+        width: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .CText{
+        /* border: 1px solid green; */
+    
+        height: fit-content;
+        max-width: 65%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        position: absolute;
+        top: 0;
+        left: 20px;
+    
+        padding: auto 0;
+    
+        z-index: 2;
     }
     
+    .CText2{
+        /* border: 1px solid red; */
     
-    .ImgP{
-        border: 1px solid #eeee;
-        border-radius: 50%;
+        max-width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .first0{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+    }
+    .first{
+        color: #fff;
+        /* color: black; */
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .second{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 25px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+    }
+    
+    .CLogo{
+        /* background-color: red; */
+    
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+        /* margin-left: 70px; */
+    }
+    
+    .miCv{
+        background-color: #0984e3;
+        color: #fff;
         
-        height: 220px;
-        width: 220px;
+        height: 15px;
+        width: 35px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-weight: bold;
+        font-size: 11px;
+    
+        padding: 2px 8px;
+    
+        box-shadow: 2px -2px 0px #fff;
+        border-radius: 5px;
+    
+        /* rotate: -5deg; */
+    
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .miCv:hover{
+        transform: scale(1.1);
+        color: #fff;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 15px;
+        width: 35px;
     }
 }

@@ -54,22 +54,22 @@ export const SobreMi = () => {
     
   return (
     <div id="sobre-mi" className={styles.containerS}>
-        <h1 className="text-3xl font-bold underline">Sobre Mi</h1>
-        <p className="text-3xl font-bold underline bg-red-400">
-            Soy un desarrollador <b> Full Stack </b> argentino con amplia experiencia en todas las áreas del desarrollo web. 
+        <h1 className={styles.title}>Sobre Mi</h1>
+        <p>
+            Como desarrollador <b>Full Stack</b> argentino, me especializo en el diseño e implementación de arquitecturas de software escalables y eficientes. Utilizo tecnologías de vanguardia tanto en el frontend como en el backend para garantizar un rendimiento óptimo y una experiencia de usuario excepcional.
             <br />
-            Mi enfoque se centra en crear soluciones sólidas y escalables utilizando tecnologías modernas y prácticas ágiles. 
+            <br />
+            En el <b>frontend</b>, desarrollo interfaces atractivas y receptivas utilizando bibliotecas modernas como React.js y Next.js, junto con prácticas avanzadas de CSS para estilos limpios y mantenibles.
+            <br />
+            <br />
+            En el <b>backend</b>, trabajo con tecnologías como Node.js, Express.js y Redux para crear APIs robustas y eficientes. Tengo experiencia en bases de datos relacionales como PostgreSQL y no relacionales como MongoDB, así como en la optimización de consultas y gestión de la persistencia de datos.
             <br/>
-            Soy una persona empática, responsable y disciplinada, y disfruto trabajando en equipo. He demostrado habilidades de comunicación y liderazgo al colaborar efectivamente en entornos grupales. Además, siempre estoy en busca de oportunidades para ampliar mis conocimientos a través de certificaciones y cursos relevantes en desarrollo web.
+            <br/>
+            Además, poseo habilidades sólidas en el <b>despliegue</b> y gestión de aplicaciones en entornos de producción.
+            <br/>
+            <br/>
+            Mi estilo de trabajo se caracteriza por ser <b>empático, responsable</b> y <b> disciplinado</b>. Disfruto colaborando en equipo y he demostrado habilidades de comunicación efectiva y liderazgo en entornos grupales, contribuyendo al éxito de los proyectos en los que participo.
         </p>
-
-        <p className={styles.c2P}>
-            Soy un desarrollador <b> Full Stack </b> argentino con amplia experiencia en todas las áreas del desarrollo web. 
-            <br />
-            Mi enfoque se centra en crear soluciones sólidas y escalables utilizando tecnologías modernas y prácticas ágiles. 
-            <br/>
-            Soy una persona empática, responsable y disciplinada, y disfruto trabajando en equipo. He demostrado habilidades de comunicación y liderazgo al colaborar efectivamente en entornos grupales. Además, siempre estoy en busca de oportunidades para ampliar mis conocimientos a través de certificaciones y cursos relevantes en desarrollo web.
-        </p> 
 
         <div className={styles.carouselSlide1}>
             <div className={styles.carouselSlide2}>

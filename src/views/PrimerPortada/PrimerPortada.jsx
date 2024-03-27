@@ -1,10 +1,7 @@
 import React from 'react'
 
 import styles from "./PrimerPortada.module.css"
-// import imgPortada from "/photo-egreso.webp"
-import imgPortada from "/12-transformed.png"
-// import imgPortada from "/photo-egreso-edit.png"
-// import imgPortada from "/photo-egreso-edit-2.png"
+import imgPortada2 from "/img-portadas/img-programer-7.jpg"
 
 
 export const PrimerPortada = () => {
@@ -24,19 +21,10 @@ export const PrimerPortada = () => {
                 <a href="/CV-Gabriel-FullStack.pdf" download="CV-Gabriel-FullStack" className={styles.miCv}>Mi CV</a>
             </div>
         </div>
+    
         <div className={styles.CImg}>
-            <img src={imgPortada} alt='' className={styles.ImgP}/>
+            <img src={imgPortada2} alt='' className={styles.ImgP}/>
         </div>
     </div>
   )
 }
-
-{/* <Link to={""}>
-    <img src={imgGithub} alt='' className={styles.imgLogos}/>
-</Link>
-<Link to={""}>
-    <img src={imgLinkedin} alt='' className={styles.imgLogos}/>
-</Link>
-<Link to={""}>
-    <img src={imgInstagram} alt='' className={styles.imgLogos}/>
-</Link>  */}

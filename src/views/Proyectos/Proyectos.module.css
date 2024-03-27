@@ -1,17 +1,23 @@
 .container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     
-    margin-top: 5em;
-    padding: 0 20px;
+    margin-top: 50px;
+    padding: 25px 0;
     
-    min-width: 100%;
-    min-height: 100vh;
+    width: 100%;
 
-    border-radius: 20px;    
     /* border: 1px solid #eeee; */
-    /* background-color: #fcf8f8ee; */
+}
+
+.title{
+    color: #0984e3;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: "Karantina", system-ui;
+    font-style: normal;
+  
+    margin: 0;
 }
 
 .container2{
@@ -19,7 +25,7 @@
     align-items: flex-start;
     justify-content: space-between;
     
-    margin-top: 5em;
+    margin-top: 3em;
     
     max-width: 100%;
 
@@ -28,16 +34,12 @@
 
 .containerCart{
     display: flex;
-    /* align-items: flex-start; */
-    /* justify-content: space-evenly; */
 
-    padding-left: 50px;
+    padding-left: 250px;
     
-    max-width: 100%;
+    width: 100%;
     max-height: 100%;
 
-
-    /* background-color: gray; */
     /* border: 1px solid gray; */
 }
 
@@ -49,14 +51,106 @@
     flex-wrap: wrap;
     gap: 5px;
     
-    min-height: 350px;
-    max-width: 360px;
+    height: fit-content;
+    max-width: 500px;
 
-    padding: 10px;
+    padding: 10px 10px;
     
-    border-radius: 10px;
-    /* border: 1px solid red; */
-    background-color: #f5f5f5;
+    border-radius: 20px;
+    /* background-color: #f5f5f5; */
+    background-color: #0985e3aa;
+}
+
+.contenedorImgProyectos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    /* background-color: red; */
+
+    width: 100%;
+
+    position: relative;
+}
+
+.imgProyectos{
+    margin-left: 20px;
+    
+    width: 25px;
+    height: 25px;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.imgProyectos:hover{
+    transform: scale(1.2);
+}
+
+.nameImg{
+    display: none;
+
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+
+    padding: 0 5px;
+
+    font-size: 15px;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    
+    position: absolute;
+    bottom: -25px;
+    right: 40px;
+}
+
+.imgProyectos:hover + .nameImg{
+    display: inline;
+}
+
+.nameImg2{
+    display: none;
+
+    background-color: white;
+    height: fit-content;
+    width: fit-content;
+
+    padding: 0 5px;
+
+    font-size: 15px;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+}
+
+.imgProyectos:hover + .nameImg2{
+    display: inline;
+}
+
+.titleProyectos{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: "Karantina", system-ui;
+    font-style: normal;
+    
+    width: 100%;
+    margin: 0;
+}
+
+.CExp1{
+    /* padding: 0 10px; */
+    font-size: 20px;
+    font-family: "GFS Neohellenic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* img proyectos botones */
@@ -64,7 +158,8 @@
     display: flex;
     flex-direction: column;
 
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    background-color: #0985e3aa;
 
     border-radius: 10px;
     padding: 10px;
@@ -81,6 +176,13 @@
     border-radius: 10px;
     border: none;
     background-color: white;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.Btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .imgB{
@@ -88,17 +190,15 @@
     height: 50px;
 
     border-radius: 10px;
-    border: 1px solid #f5f5f5;
+    border: 1px solid gray;
     /* background-color: blue; */
 }
 
 
 /* Imagenes de los proyectos */
 .imgP{
-    width: 360px;
-    height: 200px;
-
-    /* margin-bottom: 10px; */
+    width: 500px;
+    height: auto;
 
     border-radius: 10px;
     /* border: 1px solid black; */
@@ -116,9 +216,11 @@
 .carouselSlide {
     display: flex;
     overflow: hidden;
-    width: 400px; 
+    height: fit-content;
+    max-width: 500px;
     
-    /* border: 5px solid greenyellow; */
+    /* border: 1px solid black; */
+    border-radius: 15px;
     position: relative;
     transition: transform 0.5s ease; 
 }
@@ -139,7 +241,8 @@
 .prev{
     /* background-color: red; */
     border: 1px solid black;
-    
+    border-radius: 10px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,11 +255,14 @@
     
     padding: 5px;
     margin: 0;
+
+    transition: transform 0.7s ease-in;
 }
 
 .next{
     /* background-color: red; */
     border: 1px solid black;
+    border-radius: 10px;
 
     display: flex;
     align-items: center;
@@ -168,10 +274,242 @@
     
     padding: 5px;
     margin: 0;
+
+    transition: transform 0.7s ease-in;
 }
 
+.prev:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    background-color: rgb(176, 174, 174);
+}
+
+.next:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    background-color: rgb(176, 174, 174);
+}
 
 .ImgBtn{
     width: 10px;
     height: 10px;
+}
+
+@media screen and (max-width: 950px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 50px;
+        padding: 25px 0;
+        
+        max-width: 100%;
+    
+        /* border: 1px solid #eeee; */
+    
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .title{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+      
+        margin: 0;
+    }
+    
+    .container2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        max-width: 100%;
+    
+        /* border: 1px solid blue; */
+    }
+    
+    .containerCart{
+        display: flex;
+        /* align-items: flex-start; */
+        justify-content: space-evenly;
+    
+        padding-left: 50px;
+        
+        max-width: 100%;
+        max-height: 100%;
+    
+        
+        /* background-color: gray; */
+        /* border: 1px solid gray; */
+    }
+    
+    .CExp1{
+        padding: 0;
+
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        /* font-weight: 600; */
+        font-style: normal;
+    }
+    
+    .cart{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    
+        flex-wrap: wrap;
+        gap: 5px;
+        
+        min-height: 350px;
+        max-width: 360px;
+    
+        padding: 10px;
+        
+        border-radius: 20px;
+        /* border: 1px solid red; */
+        /* background-color: #f5f5f5; */
+        background-color: #0985e3aa;
+    }
+    
+    /* img proyectos botones */
+    .containerBtn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        /* background-color: #f5f5f5; */
+        background-color: #0985e3aa;
+    
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+    
+    .Btn{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 75px;
+        height: 50px;
+        
+        border-radius: 10px;
+        border: none;
+
+        background-color: white;
+        
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .Btn:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    .imgB{
+        
+        width: 75px;
+        height: 50px;
+    
+        border-radius: 10px;
+        border: 1px solid gray;
+        /* background-color: blue; */
+    }
+    
+    
+    /* Imagenes de los proyectos */
+    .imgP{
+        width: 360px;
+        height: 200px;
+    
+        /* margin-bottom: 10px; */
+    
+        border-radius: 10px;
+        /* border: 1px solid black; */
+    }
+    
+    /* carrusel */
+    
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .carouselSlide {
+        display: flex;
+        overflow: hidden;
+        width: 400px; 
+        max-height: fit-content;
+        
+        /* border: 1px solid black; */
+        border-radius: 15px;
+        position: relative;
+        transition: transform 0.5s ease; 
+    }
+    
+    .slide {
+        display: none;  
+    }
+    
+    .slideActive {
+        display: block;
+    }
+    
+    .carouselslide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .prev{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        left: 0;
+        top: 40%;
+        
+        rotate: 180deg;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .next{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        right: 0;
+        top: 40%;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .ImgBtn{
+        width: 10px;
+        height: 10px;
+    }
 }

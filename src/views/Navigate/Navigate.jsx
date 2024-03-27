@@ -71,7 +71,7 @@ const toggleMenu = () => {
             </li>
 
             <li className={styles.navItem2}>
-              <button className={styles.navItem22} onClick={() => handleScroll('sobre-mi', 60)}>Sobre Mi</button>
+              <button className={styles.navItem22} onClick={() => handleScroll('exp', 60)}>Experiencias</button>
             </li>
 
             <li className={styles.navItem2}>
@@ -79,7 +79,7 @@ const toggleMenu = () => {
             </li>
 
             <li className={styles.navItem2}>
-              <button className={styles.navItem22} onClick={() => handleScroll('exp', 60)}>Experiencias</button>
+              <button className={styles.navItem22} onClick={() => handleScroll('sobre-mi', 60)}>Sobre Mi</button>
             </li>
 
             <li className={styles.navItemEnd2}>
@@ -97,15 +97,15 @@ const toggleMenu = () => {
               </li>
 
               <li className={styles.navItem2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('sobre-mi', 60)}>Sobre Mi</button>
+                <button className={styles.navItem22} onClick={() => handleScroll('exp', 60)}>Experiencias</button>
               </li>
 
               <li className={styles.navItem2}>
                 <button className={styles.navItem22} onClick={() => handleScroll('proyectos', 60)}>Proyectos</button>
               </li>
-
+              
               <li className={styles.navItem2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('exp', 60)}>Experiencias</button>
+                <button className={styles.navItem22} onClick={() => handleScroll('sobre-mi', 60)}>Sobre Mi</button>
               </li>
 
               <li className={styles.navItemEnd2}>

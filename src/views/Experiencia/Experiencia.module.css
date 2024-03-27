@@ -1,7 +1,7 @@
 .exp{
     /* border: 1px solid red; */
     padding-top: 1em;
-    /* padding: 0 20px; */
+    padding: 25px 0;
     
     min-width: 100%;
 }
@@ -14,9 +14,17 @@
     flex-direction: column;
     align-items: center;
 }
-.t{
-    position: sticky;
+
+.title{
+    color: #0984e3;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: "Karantina", system-ui;
+    font-style: normal;
+  
+    /* margin: 0; */
 }
+
 .CExp1{
     /* background-color: greenyellow; */
     border-left: 1px solid #eeee;
