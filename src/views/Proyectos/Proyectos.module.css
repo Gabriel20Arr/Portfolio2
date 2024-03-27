@@ -295,6 +295,224 @@
     height: 10px;
 }
 
+@media screen and (max-width: 1245px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 50px;
+        padding: 25px 0;
+        
+        max-width: 100%;
+    
+        /* border: 1px solid #eeee; */
+    
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .title{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+      
+        margin: 0;
+    }
+    
+    .container2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        max-width: 100%;
+    
+        /* border: 1px solid blue; */
+    }
+    
+    .containerCart{
+        display: flex;
+        /* align-items: flex-start; */
+        justify-content: space-evenly;
+    
+        padding-left: 50px;
+        
+        max-width: 100%;
+        max-height: 100%;
+    
+        
+        /* background-color: gray; */
+        /* border: 1px solid gray; */
+    }
+    
+    .CExp1{
+        padding: 0;
+
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        /* font-weight: 600; */
+        font-style: normal;
+    }
+    
+    .cart{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    
+        flex-wrap: wrap;
+        gap: 5px;
+        
+        max-width: 450px;
+        min-height: fit-content;
+    
+        padding: 10px;
+        
+        border-radius: 20px;
+        /* border: 1px solid red; */
+        /* background-color: #f5f5f5; */
+        background-color: #0985e3aa;
+    }
+    
+    /* img proyectos botones */
+    .containerBtn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        /* background-color: #f5f5f5; */
+        background-color: #0985e3aa;
+    
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+    
+    .Btn{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 75px;
+        height: 50px;
+        
+        border-radius: 10px;
+        border: none;
+
+        background-color: white;
+        
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .Btn:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    .imgB{
+        
+        width: 75px;
+        height: 50px;
+    
+        border-radius: 10px;
+        border: 1px solid gray;
+        /* background-color: blue; */
+    }
+    
+    
+    /* Imagenes de los proyectos */
+    .imgP{
+        width: 450px;
+        height: auto;
+    
+        /* margin-bottom: 10px; */
+    
+        border-radius: 10px;
+        /* border: 1px solid black; */
+    }
+    
+    /* carrusel */
+    
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .carouselSlide {
+        display: flex;
+        overflow: hidden;
+        width: 450px; 
+        max-height: fit-content;
+        
+        /* border: 1px solid black; */
+        border-radius: 15px;
+        position: relative;
+        transition: transform 0.5s ease; 
+    }
+    
+    .slide {
+        display: none;  
+    }
+    
+    .slideActive {
+        display: block;
+    }
+    
+    .carouselslide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .prev{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        left: 0;
+        top: 40%;
+        
+        rotate: 180deg;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .next{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        right: 0;
+        top: 40%;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .ImgBtn{
+        width: 10px;
+        height: 10px;
+    }
+}
 @media screen and (max-width: 950px) {
     .container{
         display: flex;
@@ -454,6 +672,634 @@
         max-height: fit-content;
         
         /* border: 1px solid black; */
+        border-radius: 15px;
+        position: relative;
+        transition: transform 0.5s ease; 
+    }
+    
+    .slide {
+        display: none;  
+    }
+    
+    .slideActive {
+        display: block;
+    }
+    
+    .carouselslide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .prev{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        left: 0;
+        top: 40%;
+        
+        rotate: 180deg;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .next{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        right: 0;
+        top: 40%;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .ImgBtn{
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 50px;
+        padding: 25px 0;
+        
+        max-width: 100%;
+    
+        /* border: 1px solid #eeee; */
+    
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .title{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+      
+        margin: 0;
+    }
+    
+    .container2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        max-width: 100%;
+    
+        /* border: 1px solid blue; */
+    }
+    
+    .containerCart{
+        display: flex;
+        /* align-items: flex-start; */
+        justify-content: space-evenly;
+    
+        padding-left: 50px;
+        
+        max-width: 100%;
+        max-height: 100%;
+    
+        
+        /* background-color: gray; */
+        /* border: 1px solid gray; */
+    }
+    
+    .CExp1{
+        padding: 0;
+
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        /* font-weight: 600; */
+        font-style: normal;
+    }
+    
+    .cart{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    
+        flex-wrap: wrap;
+        gap: 5px;
+        
+        min-height: 350px;
+        max-width: 320px;
+    
+        padding: 10px;
+        
+        border-radius: 20px;
+        /* border: 1px solid red; */
+        /* background-color: #f5f5f5; */
+        background-color: #0985e3aa;
+    }
+    
+    /* img proyectos botones */
+    .containerBtn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        /* background-color: #f5f5f5; */
+        background-color: #0985e3aa;
+    
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+    
+    .Btn{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 75px;
+        height: 50px;
+        
+        border-radius: 10px;
+        border: none;
+
+        background-color: white;
+        
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .Btn:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    
+    .imgB{
+        
+        width: 75px;
+        height: 50px;
+    
+        border-radius: 10px;
+        border: 1px solid gray;
+        /* background-color: blue; */
+    }
+    
+    
+    /* Imagenes de los proyectos */
+    .imgP{
+        width: 320px;
+        height: 200px;
+    
+        /* margin-bottom: 10px; */
+    
+        border-radius: 10px;
+        /* border: 1px solid black; */
+    }
+    
+    /* carrusel */
+    
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .carouselSlide {
+        display: flex;
+        overflow: hidden;
+        width: 320px; 
+        max-height: fit-content;
+        
+        /* border: 1px solid black; */
+        border-radius: 15px;
+        position: relative;
+        transition: transform 0.5s ease; 
+    }
+    
+    .slide {
+        display: none;  
+    }
+    
+    .slideActive {
+        display: block;
+    }
+    
+    .carouselslide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .prev{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        left: 0;
+        top: 40%;
+        
+        rotate: 180deg;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .next{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        right: 0;
+        top: 40%;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .ImgBtn{
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 50px;
+        padding: 25px 0;
+        
+        max-width: 100%;
+    
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .title{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 40px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+      
+        margin: 0;
+    }
+    
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        max-width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+    
+    .containerCart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        max-width: 100%;
+        max-height: 100%;
+    
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .CExp1{
+        padding: 0;
+
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        /* font-weight: 600; */
+        font-style: normal;
+    }
+    
+    .cart{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    
+        flex-wrap: wrap;
+        gap: 5px;
+        
+        min-height: 350px;
+        max-width: 320px;
+    
+        padding: 10px;
+        
+        border-radius: 20px;
+        /* border: 1px solid red; */
+        /* background-color: #f5f5f5; */
+        background-color: #0985e3aa;
+    }
+    
+    /* img proyectos botones */
+    .containerBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        margin-top: 10px;
+
+        width: 320px;
+    }
+    
+    .Btn{
+        padding: 0;
+        margin: 0;
+
+        width: 75px;
+        height: 50px;
+        
+        border-radius: 10px;
+        border: none;
+
+        background-color: white;
+        
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .Btn:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    .imgB{
+        margin: 0;
+
+        width: 75px;
+        height: 50px;
+    
+        border-radius: 10px;
+    }
+    
+    
+    /* Imagenes de los proyectos */
+    .imgP{
+        width: 320px;
+        height: 200px;
+    
+        /* margin-bottom: 10px; */
+    
+        border-radius: 10px;
+        /* border: 1px solid black; */
+    }
+    
+    /* carrusel */
+    
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carouselSlide {
+        display: flex;
+        overflow: hidden;
+        width: 320px; 
+        max-height: fit-content;
+        
+        border-radius: 15px;
+        position: relative;
+        transition: transform 0.5s ease; 
+    }
+    
+    .slide {
+        display: none;  
+    }
+    
+    .slideActive {
+        display: block;
+    }
+    
+    .carouselslide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .prev{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        left: 0;
+        top: 40%;
+        
+        rotate: 180deg;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .next{
+        /* background-color: red; */
+        border: 1px solid black;
+        border-radius: 10px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        position: absolute;
+        right: 0;
+        top: 40%;
+        
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .ImgBtn{
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 50px;
+        padding: 25px 0;
+        
+        max-width: 100%;
+    
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .title{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+      
+        margin: 0;
+    }
+    
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        max-width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+    
+    .containerCart{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        max-width: 100%;
+        max-height: 100%;
+    
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .CExp1{
+        padding: 0;
+
+        font-size: 20px;
+        font-family: "GFS Neohellenic", sans-serif;
+        /* font-weight: 600; */
+        font-style: normal;
+    }
+    
+    .cart{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    
+        flex-wrap: wrap;
+        gap: 5px;
+        
+        min-height: 350px;
+        max-width: 250px;
+    
+        padding: 10px;
+        
+        border-radius: 20px;
+        /* border: 1px solid red; */
+        /* background-color: #f5f5f5; */
+        background-color: #0985e3aa;
+    }
+    
+    /* img proyectos botones */
+    .containerBtn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        margin-top: 10px;
+
+        width: 250px;
+    }
+    
+    .Btn{
+        padding: 0;
+        margin: 0;
+
+        width: 75px;
+        height: 50px;
+        
+        border-radius: 10px;
+        border: none;
+
+        background-color: white;
+        
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .Btn:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    .imgB{
+        margin: 0;
+
+        width: 75px;
+        height: 50px;
+    
+        border-radius: 10px;
+    }
+    
+    
+    /* Imagenes de los proyectos */
+    .imgP{
+        width: 250px;
+        height: 150px;
+    
+        /* margin-bottom: 10px; */
+    
+        border-radius: 10px;
+        /* border: 1px solid black; */
+    }
+    
+    /* carrusel */
+    
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .carouselSlide {
+        display: flex;
+        overflow: hidden;
+        width: 250px; 
+        max-height: fit-content;
+        
         border-radius: 15px;
         position: relative;
         transition: transform 0.5s ease; 

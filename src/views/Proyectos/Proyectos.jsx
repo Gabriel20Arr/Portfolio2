@@ -64,9 +64,11 @@ export const Proyectos = () => {
                 <button className={styles.Btn} onClick={() => handlerSelectProyect(1)}>
                     <img src={"/img-proyectos-webp/market.webp"} alt='' className={styles.imgB}/>
                 </button>
+
                 <button className={styles.Btn} onClick={() => handlerSelectProyect(2)}>
                     <img src={"/img-proyectos-webp/to-do.webp"} alt='' className={styles.imgB}/>
                 </button>
+                
                 <button className={styles.Btn} onClick={() => handlerSelectProyect(3)}>
                     <img src={"/img-proyectos-webp/Foods.webp"} alt='' className={styles.imgB}/>
                 </button>

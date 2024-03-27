@@ -22,7 +22,7 @@ export const Contact = () => {
 
     // Obtener los valores de los campos del formulario
     const name = form.current.user_name.value;
-    const email = form.current.user_email.value;
+    const email = form.current.email.value;
     const message = form.current.message.value;
 
     // Realizar validaciones
