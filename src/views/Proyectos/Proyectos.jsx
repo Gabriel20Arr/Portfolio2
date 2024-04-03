@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 import styles from "./Proyectos.module.css"
 
-import imgprev from "/img-proyectos-webp/icono-next.png" 
-import imgNext from "/img-proyectos-webp/icono-next.png" 
+import imgprev from "/img-proyectos-webp/flecha-correcta.png" 
+import imgNext from "/img-proyectos-webp/flecha-correcta.png" 
 import internet from "/img-proyectos-webp/internet-Proyect.png"
 import github from "/contact/github-contact.png"
 
@@ -90,27 +90,28 @@ export const Proyectos = () => {
                                 <img src={imgNext} alt='' className={styles.ImgBtn}/>
                             </button>
                         </div>
+                        
+                        <div className={styles.contenedorTitleImg}>
+                            <h3 className={styles.titleProyectos}>Market Place</h3>
+                            <div className={styles.contenedorImgProyectos}>
+                                <Link to={"https://marketx-doploy.vercel.app/"}>
+                                    <div className={styles.containerIndvImgProyect}>
+                                        <img src={internet} alt='Internet' className={styles.imgProyectos}/>
+                                        <span className={styles.nameImg}>Web</span>
+                                    </div>
+                                </Link>
 
-                        <div className={styles.contenedorImgProyectos}>
-                            <Link to={"https://marketx-doploy.vercel.app/"}>
-                                <div className={styles.containerIndvImgProyect}>
-                                    <img src={internet} alt='Internet' className={styles.imgProyectos}/>
-                                    <span className={styles.nameImg}>Web</span>
-                                </div>
-                            </Link>
-
-                            <Link to={"https://github.com/Gabriel20Arr/marketX"}>
-                                <div className={styles.containerIndvImgProyect}>
-                                    <img src={github} alt='Github' className={styles.imgProyectos}/>
-                                    <span className={styles.nameImg2}>Github</span>
-                                </div>
-                            </Link>
+                                <Link to={"https://github.com/Gabriel20Arr/marketX"}>
+                                    <div className={styles.containerIndvImgProyect}>
+                                        <img src={github} alt='Github' className={styles.imgProyectos}/>
+                                        <span className={styles.nameImg2}>Github</span>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
-
-                        <h3 className={styles.titleProyectos}>Market Place</h3>
+                        
                         <div className={styles.CExp1}>
-                            Un desarrollador Full Stack argentino con amplia experiencia en todas las áreas del desarrollo web.
-                            Mi enfoque se centra en crear soluciones sólidas y escalables utilizando tecnologías modernas y prácticas ágiles.
+                            Durante mi trayectoria como freelancer, he tenido la oportunidad de trabajar en una variedad de proyectos, tanto para clientes como para proyectos personales. Esto incluye la creación de sitios web completos, donde me encargué del desarrollo del frontend, backend y la implementación. Por ejemplo, he desarrollado una plataforma de gestión de tareas completamente personalizada, adaptada a las necesidades específicas del cliente
                         </div>
 
                     </div> )
@@ -132,26 +133,27 @@ export const Proyectos = () => {
                             </button>
                         </div>
 
-                        <div className={styles.contenedorImgProyectos}>
-                            <Link to={"https://todolist-s3jc.onrender.com/"}>
-                                <div className={styles.containerIndvImgProyect}>
-                                    <img src={internet} alt='Internet' className={styles.imgProyectos}/>
-                                    <span className={styles.nameImg}>Web</span>
-                                </div>
-                            </Link>
 
-                            <Link to={"https://github.com/Gabriel20Arr/ToDoList"}>
-                                <div className={styles.containerIndvImgProyect}>
-                                    <img src={github} alt='Github' className={styles.imgProyectos}/>
-                                    <span className={styles.nameImg2}>Github</span>
-                                </div>
-                            </Link>
+                        <div className={styles.contenedorTitleImg}>
+                            <h3 className={styles.titleProyectos}>ToDoList</h3>
+                            <div className={styles.contenedorImgProyectos}>
+                                <Link to={"https://todolist-s3jc.onrender.com/"}>
+                                    <div className={styles.containerIndvImgProyect}>
+                                        <img src={internet} alt='Internet' className={styles.imgProyectos}/>
+                                        <span className={styles.nameImg}>Web</span>
+                                    </div>
+                                </Link>
+
+                                <Link to={"https://github.com/Gabriel20Arr/ToDoList"}>
+                                    <div className={styles.containerIndvImgProyect}>
+                                        <img src={github} alt='Github' className={styles.imgProyectos}/>
+                                        <span className={styles.nameImg2}>Github</span>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
-
-                        <h3 className={styles.titleProyectos}>To Do List</h3>
                         <div className={styles.CExp1}>
-                            un desarrollador Full Stack argentino con amplia experiencia en todas las áreas del desarrollo web.
-                            Mi enfoque se centra en crear soluciones sólidas y escalables utilizando tecnologías modernas y prácticas ágiles.
+                            Durante mi trayectoria como freelancer, he tenido la oportunidad de trabajar en una variedad de proyectos, tanto para clientes como para proyectos personales. Esto incluye la creación de sitios web completos, donde me encargué del desarrollo del frontend, backend y la implementación. Por ejemplo, he desarrollado una plataforma de gestión de tareas completamente personalizada, adaptada a las necesidades específicas del cliente
                         </div>
                         
                 </div> )
@@ -173,25 +175,24 @@ export const Proyectos = () => {
                         </div>
 
 
-                        <div className={styles.contenedorImgProyectos}>
-                            <Link to={"https://deploy-food-sage.vercel.app/"}>
-                                <div className={styles.containerIndvImgProyect}>
-                                    <img src={internet} alt='Internet' className={styles.imgProyectos}/>
-                                    <span className={styles.nameImg}>Web</span>
-                                </div>
-                            </Link>
+                        <div className={styles.contenedorTitleImg}>
+                            <h3 className={styles.titleProyectos}>Foods</h3>
+                            <div className={styles.contenedorImgProyectos}>
+                                <Link to={"https://deploy-food-sage.vercel.app/"}>
+                                    <div className={styles.containerIndvImgProyect}>
+                                        <img src={internet} alt='Internet' className={styles.imgProyectos}/>
+                                        <span className={styles.nameImg}>Web</span>
+                                    </div>
+                                </Link>
 
-                            <Link to={"https://github.com/Gabriel20Arr/Deploy-Food"}>
-                                <div className={styles.containerIndvImgProyect}>
-                                    <img src={github} alt='Github' className={styles.imgProyectos}/>
-                                    <span className={styles.nameImg2}>Github</span>
-                                </div>
-                            </Link>
+                                <Link to={"https://github.com/Gabriel20Arr/Deploy-Food"}>
+                                    <div className={styles.containerIndvImgProyect}>
+                                        <img src={github} alt='Github' className={styles.imgProyectos}/>
+                                        <span className={styles.nameImg2}>Github</span>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
-
-                        <h3 className={styles.titleProyectos}>
-                            Foods
-                        </h3>
                         <div className={styles.CExp1}>
                             un desarrollador Full Stack argentino con amplia experiencia en todas las áreas del desarrollo web.
                             Mi enfoque se centra en crear soluciones sólidas y escalables utilizando tecnologías modernas y prácticas ágiles.

@@ -103,7 +103,7 @@
 .navItemEnd {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bolder;
     /* background-color: #fff; */
     cursor: pointer;
     outline: none;
@@ -114,17 +114,15 @@
 
 
 .navItem button:hover {
-    padding: 6px 10px;
     cursor: pointer;
     outline: none;
+    color: #0984e3;
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     
-    border-radius: 20px;
-
-    -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+    /* -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);  */
 }
 
 .navItemEnd button {
@@ -143,17 +141,11 @@
 }
 
 .navItemEnd button:hover {
-    padding: 6px 10px;
     cursor: pointer;
     outline: none;
+    color: #0984e3;
 
-    transform: scale(1.1);
-    
-    border-radius: 20px;
-
-    -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
+    transform: scale(1.05);
 }
 
 .imgMenu{
@@ -175,13 +167,10 @@
     .navbar {
         width: 70%;
         height: 5.5em;
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
         
-        /* padding: 0 30px; */
-    
         background-color: #fff;
         border-bottom: 2px solid #eee;
         font-weight: bold;
@@ -201,7 +190,6 @@
     }
 
     .navLinks2{
-        /* background-color: #eeeeeee4; */
         backdrop-filter: blur(15px);
         border: 1px solid #eee;
         
@@ -211,7 +199,6 @@
         align-items: center;
 
         padding-right: 70px;
-        /* margin-right: 20px; */
 
         width: 82%;
         min-height: 50vh;
@@ -385,7 +372,7 @@
     }
     
     .navbar {
-        width: 90%;
+        width: 100%;
         height: 5.5em;
         
         display: flex;
@@ -414,7 +401,6 @@
 
     .navLinks2{
         /* background-color: #eeeeeee4; */
-        backdrop-filter: blur(15px);
         border: 1px solid #eee;
         
         display: flex;
@@ -422,7 +408,7 @@
         justify-content: space-evenly;
         align-items: center;
 
-        width: 61%;
+        max-width: 100%;
         height: 100%;
 
         list-style: none;
@@ -459,8 +445,8 @@
         
         padding: 20px;
 
-        width: 61%;
-        min-height: 100%;
+        max-width: 100%;
+        height: 100%;
 
         position: absolute;
         top: 4.6em;
