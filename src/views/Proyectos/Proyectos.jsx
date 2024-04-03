@@ -111,7 +111,7 @@ export const Proyectos = () => {
                         </div>
                         
                         <div className={styles.CExp1}>
-                            Durante mi trayectoria como freelancer, he tenido la oportunidad de trabajar en una variedad de proyectos, tanto para clientes como para proyectos personales. Esto incluye la creación de sitios web completos, donde me encargué del desarrollo del frontend, backend y la implementación. Por ejemplo, he desarrollado una plataforma de gestión de tareas completamente personalizada, adaptada a las necesidades específicas del cliente
+                            MarketX es un Marketplace que te permite explorar y realizar compras de manera fácil y segura. Puedes acceder al sitio iniciando sesión con tu cuenta de Google o creando tu propia cuenta personalizada. Una vez dentro, podrás publicar tus propios productos y mostrarlos a la comunidad.
                         </div>
 
                     </div> )
@@ -153,7 +153,7 @@ export const Proyectos = () => {
                             </div>
                         </div>
                         <div className={styles.CExp1}>
-                            Durante mi trayectoria como freelancer, he tenido la oportunidad de trabajar en una variedad de proyectos, tanto para clientes como para proyectos personales. Esto incluye la creación de sitios web completos, donde me encargué del desarrollo del frontend, backend y la implementación. Por ejemplo, he desarrollado una plataforma de gestión de tareas completamente personalizada, adaptada a las necesidades específicas del cliente
+                            Esta no es tu típica lista de tareas; es una experiencia personalizada con un sistema de inicio de sesión que te permite llevar un registro de tus tareas de manera eficiente. 💻🔐 La navegación intuitiva te guía a través de secciones como tu perfil, página principal, la opción de agregar nuevas tareas, marcar como favoritas y una útil sección de ayuda. ¡Y sí, puedes contactarme directamente por correo electrónico para cualquier pregunta o problema! 🚀📧 Cada tarea que creas viene con detalles clave: categoría, título, descripción, fecha de creación, un temporizador y un calendario con alertas para mantenerte organizado. ⏰🗓️
                         </div>
                         
                 </div> )
@@ -194,8 +194,7 @@ export const Proyectos = () => {
                             </div>
                         </div>
                         <div className={styles.CExp1}>
-                            un desarrollador Full Stack argentino con amplia experiencia en todas las áreas del desarrollo web.
-                            Mi enfoque se centra en crear soluciones sólidas y escalables utilizando tecnologías modernas y prácticas ágiles.
+                            Trata de una web donde los usuarios podran crear sus propias recetas, realizar búsquedas, ver detalles de las recetas, navegar con un sistema de paginación y aplicar filtros de diversos tipos. También se les permitió crear nuevas recetas y compartir sus propias creaciones culinarias. 
                         </div>
                 </div> )
                 }
