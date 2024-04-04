@@ -40,7 +40,7 @@
 
     color: #0984e3;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Karantina", system-ui;
     font-style: normal;
     cursor: pointer;
@@ -73,10 +73,10 @@
 }
 
 .navItem {
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    /* background-color: #fff; */
     cursor: pointer;
     outline: none;
     margin-right: 15px;
@@ -87,6 +87,7 @@
 
 .navItem button {
     background-color: #fff;
+    color: black;
     cursor: pointer;
     outline: none;
     position: relative;
@@ -128,6 +129,7 @@
 
 .navItemEnd button {
     background-color: #fff;
+    color: black;
     cursor: pointer;
     outline: none;
     position: relative;
@@ -144,7 +146,6 @@
 .navItemEnd button:hover {
     cursor: pointer;
     outline: none;
-    color: #0984e3;
 
     transform: scale(1.05);
 }
