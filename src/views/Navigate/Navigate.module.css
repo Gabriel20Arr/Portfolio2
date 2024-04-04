@@ -61,6 +61,7 @@
 
 .navLinks {
     /* background-color: #fff; */
+    color: black;
     list-style: none;
     font-weight: bold;
 
@@ -193,6 +194,7 @@
     .navLinks2{
         backdrop-filter: blur(15px);
         border: 1px solid #eee;
+        color: black;
         
         display: flex;
         flex-direction: column;
@@ -220,9 +222,9 @@
     }
 
     .navLinks3{
-        /* background-color: #eeee; */
         backdrop-filter: blur(15px);
         border: 1px solid #eee;
+        color: black;
         
         display: flex;
         flex-direction: column;
