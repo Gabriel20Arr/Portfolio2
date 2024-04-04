@@ -36,9 +36,7 @@ const toggleMenu = () => {
         {/* Menú de navegación */}
         <ul className={styles.navLinks}>
           <li className={styles.navItem}>
-            <button className={styles.navItem2} onClick={() => handleScroll('home', 60)}>
-              Inicio
-            </button>
+            <button className={styles.navItem2} onClick={() => handleScroll('home', 60)}>Inicio</button>
           </li>
 
           <li className={styles.navItem}>
@@ -63,55 +61,51 @@ const toggleMenu = () => {
         <img  src={!showMenu ? imgMenu : imgMenu2} alt='' className={styles.imgMenu} onClick={toggleMenu}/> 
           
         { showMenu ? 
-        <ul  className={styles.navLinks2}>
-            <li className={styles.navItem2}>
-              <button className={styles.navItem22} onClick={() => handleScroll('home', 60)}>
-                Inicio
-              </button>
-            </li>
+        <div className={styles.navLinks2}>
+            <span className={styles.navItem2}>
+              <button className={styles.navItem22} onClick={() => handleScroll('home', 60)}>Inicio</button>
+            </span>
 
-            <li className={styles.navItem2}>
+            <span className={styles.navItem2}>
               <button className={styles.navItem22} onClick={() => handleScroll('exp', 60)}>Experiencias</button>
-            </li>
+            </span>
 
-            <li className={styles.navItem2}>
+            <span className={styles.navItem2}>
               <button className={styles.navItem22} onClick={() => handleScroll('proyectos', 60)}>Proyectos</button>
-            </li>
+            </span>
 
-            <li className={styles.navItem2}>
+            <span className={styles.navItem2}>
               <button className={styles.navItem22} onClick={() => handleScroll('sobre-mi', 60)}>Sobre Mi</button>
-            </li>
+            </span>
 
-            <li className={styles.navItemEnd2}>
+            <span className={styles.navItemEnd2}>
               <button className={styles.navItem22} onClick={() => handleScroll('contacto', 60)}>Contacto</button>
-            </li>
-        </ul> 
+            </span>
+        </div> 
 
           : 
 
-        <ul  className={styles.navLinks3}>
-              <li className={styles.navItem2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('home', 60)}>
-                  Inicio
-                </button>
-              </li>
+        <div className={styles.navLinks3}>
+              <span className={styles.navItem2}>
+                <button className={styles.navItem22} onClick={() => handleScroll('home', 60)}>Inicio</button>
+              </span>
 
-              <li className={styles.navItem2}>
+              <span className={styles.navItem2}>
                 <button className={styles.navItem22} onClick={() => handleScroll('exp', 60)}>Experiencias</button>
-              </li>
+              </span>
 
-              <li className={styles.navItem2}>
+              <span className={styles.navItem2}>
                 <button className={styles.navItem22} onClick={() => handleScroll('proyectos', 60)}>Proyectos</button>
-              </li>
+              </span>
               
-              <li className={styles.navItem2}>
+              <span className={styles.navItem2}>
                 <button className={styles.navItem22} onClick={() => handleScroll('sobre-mi', 60)}>Sobre Mi</button>
-              </li>
+              </span>
 
-              <li className={styles.navItemEnd2}>
+              <span className={styles.navItemEnd2}>
                 <button className={styles.navItem22} onClick={() => handleScroll('contacto', 60)}>Contacto</button>
-              </li>
-        </ul> 
+              </span>
+        </div> 
         
         }
         

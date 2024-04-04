@@ -469,3 +469,15 @@
           width: 220px;
       }
   }
+
+  @media screen and (max-width: 500px) {
+    .title{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+      
+        margin: 0;
+      }
+  }

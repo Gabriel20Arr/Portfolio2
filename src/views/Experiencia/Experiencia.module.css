@@ -46,7 +46,7 @@
 
 .spanR{
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: -6px;
     
     background-color: #eeee;
@@ -60,7 +60,7 @@
 .titleExp {
     
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
 
     min-width: 100%;
@@ -70,15 +70,27 @@
 
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .date{
     font-weight: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .parrafoExp{
     border-left: 1px solid #eeee;
     padding-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .title{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+      
+        /* margin: 0; */
+    }
 }
