@@ -35,7 +35,7 @@ export const Contact = () => {
       })
       return;
     }
-
+// test
     // Validar el formato del correo electrónico usando una expresión regular simple
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
