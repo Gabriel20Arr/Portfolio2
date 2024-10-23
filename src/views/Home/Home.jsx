@@ -15,11 +15,26 @@ export const Home = () => {
           <Navigate />
         </header>
 
-        <PrimerPortada />
-        <Experiencia />
-        <Proyectos />
-        <SobreMi />
-        <Contact />
+        <section className={styles.componentes} id="primer-portada">
+          <PrimerPortada />
+        </section>
+
+        <section className={styles.componentes} id="exps">
+          <Experiencia />
+        </section>
+
+        <section className={styles.componentes} id="proyectos">
+          <Proyectos />
+        </section>
+
+        <section className={styles.componentes} id="sobre-mi">
+          <SobreMi />
+        </section>
+
+        <section className={styles.componentes} id="contacto">
+          <Contact />
+        </section>
+
     </div>
   )
 }

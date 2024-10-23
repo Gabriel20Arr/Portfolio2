@@ -24,29 +24,28 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: #eee; */
     height: 70px;
     width: 100%;
+    padding: 10px;
+    
     overflow: hidden;
 }
 .carouselSlide2 {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    /* background-color: #eee; */
-    height: 70px;
-    width: 100%;
-    overflow: hidden;
+    margin: 10px;
+    /* background-color: red; */
+    height: 100%;
+    max-width: 100%;
+    /* overflow: hidden; */
 }
   
 /* contenedor carrusel */
 .slide2 {
   display: flex;
-  animation: slide 7s linear infinite;
-
-  padding: 0.5rem;
-  
-  /* background-color: red; */
+  /* justify-content: space-evenly; */
+  animation: slide 8s linear infinite;
+  margin-left: 10px;
 }
 
 @keyframes slide {
@@ -54,15 +53,17 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(calc(-100% * 13));
+    transform: translateX(calc(-100% * 20));
   }
 }
   
 
 /* imagenes del carrusel */
 .imgCarrusel{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 20px;
 
     object-fit: contain;
 

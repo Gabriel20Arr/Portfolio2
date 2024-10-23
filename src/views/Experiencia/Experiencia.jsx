@@ -3,7 +3,7 @@ import styles from "./Experiencia.module.css"
 
 export const Experiencia = () => {
   return (
-    <div id="exp" className={styles.exp}>
+    <div id="exps" className={styles.exp}>
         <h2 className={styles.title}>Experiencia</h2>
         <div className={styles.ContainerExp}>
             <div className={styles.CExp1}>

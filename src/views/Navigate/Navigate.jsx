@@ -29,18 +29,16 @@ const toggleMenu = () => {
   return (
     <div className={styles.Cnav}>
       <div className={styles.navbar}>
-        <span className={styles.logo} onClick={() => handleScroll('home', 60)}>
-          &lt; Portafolio /&gt;
-        </span>
+        <span className={styles.logo} onClick={() => handleScroll('home', 60)}>Gabriel Arroyo</span>
 
         {/* Menú de navegación */}
         <ul className={styles.navLinks}>
           <li className={styles.navItem}>
             <button className={styles.navItem2} onClick={() => handleScroll('home', 60)}>Inicio</button>
-          </li>
+          </li>                          
 
           <li className={styles.navItem}>
-            <button onClick={() => handleScroll('exp', 60)}>Experiencias</button>
+            <button onClick={() => handleScroll('exps', 60)}>Experiencia</button>
           </li>
 
           <li className={styles.navItem}>
@@ -48,7 +46,7 @@ const toggleMenu = () => {
           </li>
 
           <li className={styles.navItem}>
-            <button onClick={() => handleScroll('sobre-mi', 60)}>Sobre Mi</button>
+            <button onClick={() => handleScroll('sobre-mi', 60)}>Sobre mi</button>
           </li>
 
           <li className={styles.navItemEnd}>
@@ -67,7 +65,7 @@ const toggleMenu = () => {
             </span>
 
             <span className={styles.navItem2}>
-              <button className={styles.navItem22} onClick={() => handleScroll('exp', 60)}>Experiencias</button>
+              <button className={styles.navItem22} onClick={() => handleScroll('exps', 60)}>Experiencias</button>
             </span>
 
             <span className={styles.navItem2}>
@@ -91,7 +89,7 @@ const toggleMenu = () => {
               </span>
 
               <span className={styles.navItem2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('exp', 60)}>Experiencias</button>
+                <button className={styles.navItem22} onClick={() => handleScroll('exps', 60)}>Experiencias</button>
               </span>
 
               <span className={styles.navItem2}>

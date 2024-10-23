@@ -9,3 +9,29 @@
 
     padding-top: 15px;
 }
+
+.componentes{
+    max-width: 100%;
+    min-width: 100%;
+
+    view-timeline-name: --componentes;
+    view-timeline-axis: block;
+
+    animation-timeline: --componentes;
+    animation-name: show;
+
+    animation-range: entry 25% cover 20%;
+    animation-fill-mode: both;
+}
+
+
+/* Efeceto scale */
+@keyframes show {
+    from {
+        scale: 60%;
+    }
+
+    to {
+        scale: 100%;
+    }
+}

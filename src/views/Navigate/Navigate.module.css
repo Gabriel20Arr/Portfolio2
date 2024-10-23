@@ -19,18 +19,31 @@
     align-items: center;
     
     background-color: #fff;
+    /* background-color: #0984e3; */
     color: black;
     
     font-weight: bold;
 
     position: absolute;
-    top: 0;
+    top: -6.5rem;
     position: fixed;    
 
     -webkit-box-shadow: 0px 15px 15px -14px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 15px 15px -14px rgba(0,0,0,0.75);
     box-shadow: 0px 15px 15px -14px rgba(0,0,0,0.75);
+
+    animation:slide-bottom 0.9s linear both;
 }
+
+@keyframes slide-bottom{
+    0%{
+        transform:translateY(0)
+    }
+    100%{
+        transform:translateY(6.5rem)
+    }
+}
+
 
 .logo {
     max-height: 100%;
@@ -40,8 +53,8 @@
 
     color: #0984e3;
     font-weight: bolder;
-    font-size: 25px;
     font-family: "Karantina", system-ui;
+    font-size: 23px;
     font-style: normal;
     cursor: pointer;
 
@@ -50,7 +63,7 @@
 
     border: none;
 
-    transition: transform 0.9s ease-in-out;
+    transition: transform 0.4s ease-in-out;
     z-index: 999;
 }
 
@@ -91,22 +104,22 @@
     cursor: pointer;
     outline: none;
     position: relative;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    font-size: 19px;
+    font-weight: bolder;
+    font-family: "Karantina", system-ui;
+
     min-height: 100%;
     width: fit-content;
     
     border: none;
-    transition: transform .5s ease-in-out;
+    /* transition: transform .5s ease-in-out; */
 }
 
 .navItemEnd {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
-    /* background-color: #fff; */
+    font-family: "Karantina", system-ui;
     cursor: pointer;
     outline: none;
     padding: none;
@@ -119,12 +132,6 @@
     cursor: pointer;
     outline: none;
     color: #0984e3;
-
-    transform: scale(1.05);
-    
-    /* -webkit-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.75);  */
 }
 
 .navItemEnd button {
@@ -133,21 +140,19 @@
     cursor: pointer;
     outline: none;
     position: relative;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    font-size: 19px;
+    font-weight: bolder;
+    font-family: "Karantina", system-ui;
     width: fit-content;
     
     border: none;
-    transition: transform 1s ease-in-out;
+    /* transition: transform 1s ease-in-out; */
 }
 
 .navItemEnd button:hover {
     cursor: pointer;
     outline: none;
-
-    transform: scale(1.05);
+    color: #0984e3;
 }
 
 .imgMenu{
@@ -173,10 +178,25 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        position: absolute;
+        top: 0; 
+        position: fixed;    
         
         background-color: #fff;
         border-bottom: 2px solid #eee;
         font-weight: bold;
+
+        animation: slide-bottom 0.7s linear both;
+    }
+
+    @keyframes slide-bottom{
+        0%{
+            transform:translateY(0)
+        }
+        100%{
+            transform:translateY(100px)
+        }
     }
       
     .imgMenu{
@@ -236,7 +256,7 @@
         
         padding: 20px;
 
-        width: 93%;
+        min-width: 100%;
         min-height: 50vh;
 
         position: absolute;
@@ -378,8 +398,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
+        
+        margin: auto 0;
+        
         background-color: #fff;
+        /* background-color: #0984e3; */
         font-weight: bold;
     }
     
@@ -406,7 +429,9 @@
         min-height: 100%;
 
         position: absolute;
-        top: 4.6em;
+        top: 5.6em;
+
+        margin: 0 auto;
 
         z-index: 990;
 
