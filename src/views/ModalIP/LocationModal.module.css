@@ -1,0 +1,75 @@
+/* LocationModal.module.css */
+.modal {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-width: 300px;
+  min-height: 120px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid black;
+  transition: height 0.3s ease;
+}
+
+/* Flechas */
+.felcha1{
+  width: 20px;
+  height: 20px;
+  rotate: -180deg;
+  margin-top: 10px;
+}
+
+.felcha2{
+  width: 20px;
+  height: 20px;
+}
+
+.modalMinimized {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: fit-content;
+  min-height: 120px;
+  display: flex;
+  align-items: start;
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid black;
+  height: 40px;
+  overflow: hidden;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalContent {
+  margin-top: 8px;
+}
+
+
+/* Loading */
+/* Loader.module.css */
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

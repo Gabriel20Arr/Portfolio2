@@ -1,5 +1,5 @@
 .exp{
-    /* border: 1px solid red; */
+    margin-top: 20px;
     padding-top: 50px;
     padding: 25px 0;
     
@@ -80,11 +80,48 @@
 
 .parrafoExp{
     border-left: 1px solid #eeee;
-    padding-left: 10px;
+    padding-left: 12px;
+}
+
+@media screen and (max-width: 1275px) {
+    .title{
+        color: #0984e3;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: "Karantina", system-ui;
+        font-style: normal;
+
+    }
+
+    .titleExp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        min-width: 100%;
+     
+        margin: none;
+        padding: none;
+    
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .date{
+        font-weight: none;
+        font-size: 11px;
+    }
+    
+    .parrafoExp{
+        border-left: 1px solid #eeee;
+        padding-left: 10px;
+        font-size: 11px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    .title{
+.title{
         color: #0984e3;
         font-weight: bolder;
         font-size: 30px;

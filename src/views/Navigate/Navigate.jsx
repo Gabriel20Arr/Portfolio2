@@ -58,8 +58,7 @@ const toggleMenu = () => {
         {/* Menu desplegable */}
         <img  src={!showMenu ? imgMenu : imgMenu2} alt='' className={styles.imgMenu} onClick={toggleMenu}/> 
           
-        { showMenu ? 
-        <div className={styles.navLinks2}>
+        <div className={showMenu ? styles.navLinks2 : styles.navLinks3}>
             <span className={styles.navItem2}>
               <button className={styles.navItem22} onClick={() => handleScroll('home', 60)}>Inicio</button>
             </span>
@@ -80,32 +79,6 @@ const toggleMenu = () => {
               <button className={styles.navItem22} onClick={() => handleScroll('contacto', 60)}>Contacto</button>
             </span>
         </div> 
-
-          : 
-
-        <div className={styles.navLinks3}>
-              <span className={styles.navItem2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('home', 60)}>Inicio</button>
-              </span>
-
-              <span className={styles.navItem2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('exps', 60)}>Experiencias</button>
-              </span>
-
-              <span className={styles.navItem2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('proyectos', 60)}>Proyectos</button>
-              </span>
-              
-              <span className={styles.navItem2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('sobre-mi', 60)}>Sobre Mi</button>
-              </span>
-
-              <span className={styles.navItemEnd2}>
-                <button className={styles.navItem22} onClick={() => handleScroll('contacto', 60)}>Contacto</button>
-              </span>
-        </div> 
-        
-        }
         
       </div>
     </div>

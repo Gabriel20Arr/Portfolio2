@@ -4,6 +4,7 @@
 
     padding: 80px 0px;
     margin-top: 25px;
+    margin-bottom: 50px;
     margin-left: 300px;
 
     display: flex;
@@ -234,6 +235,126 @@
 }
 
 
+@media screen and (max-width: 1275px) {
+    .CText{
+        height: fit-content;
+        max-width: 370px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        position: absolute;
+        top: 40px;
+        left: -15px;
+    
+        padding: auto 0;
+        margin-top: 20px;
+    
+        z-index: 2;
+    }
+
+    .CImg{
+        /* border: 1px solid blue; */
+        max-width: fit-content;
+        max-height: auto;
+    
+        width: fit-content;
+        height: auto;
+    
+        position: absolute;
+        top: -20px;
+        left: -50px;
+        
+        z-index: 3;
+    }
+    
+    .ImgP{
+        width: 190px;
+        height: 190px;
+    }
+    
+    .CText2{
+        max-width: 270px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Karantina", system-ui;
+        overflow: hidden;
+    }
+    
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        height: 100%;
+        width: 100%;
+        
+        font-weight: bold;
+        font-size: 17px;
+        font-family: "Karantina", system-ui;
+    }
+    
+    .first0{
+        color: black;
+        font-size: 35px;
+        font-family: "Karantina", system-ui;
+    }
+    
+    .animacionTexto{
+        font-family: "Karantina", system-ui;
+        font-size: 18px;
+        width: 250px;
+        overflow: hidden;
+    }
+    
+    .animacionTexto span {
+        position: relative;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #0984e3;
+    }
+    
+    .animacionTexto .Texto1 {
+        position: relative;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+    }
+    
+    
+    .animacionTexto .Texto2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        min-width: 100%;
+        background-color: #fffcfc;
+        border-left: 2px solid #0984e3;
+    }
+
+    .button53 {
+        padding: 4px 5px;
+        font-size: 1rem;
+        max-width: 75px;
+        height: auto;
+      }
+    
+    .CLogo{
+        /* background-color: red; */
+    
+        width: 100%;
+        height: fit-content;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+        /* margin-left: 70px; */
+    }
+}
+
 @media screen and (max-width: 900px) {
     .CText{
         height: fit-content;
@@ -353,43 +474,8 @@
     
         /* margin-left: 70px; */
     }
-    
-    .miCv{
-        background-color: #0984e3;
-        color: #fff;
-        
-        height: 20px;
-        width: 40px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        font-weight: bold;
-        font-size: 12px;
-    
-        padding: 2px 8px;
-    
-        box-shadow: 2px -2px 0px #fff;
-        border-radius: 5px;
-    
-        /* rotate: -5deg; */
-    
-        transition: transform 0.5s ease-in-out;
-    }
-    
-    .miCv:hover{
-        transform: scale(1.1);
-        color: #fff;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        height: 20px;
-        width: 40px;
-    }
 }
+
 @media screen and (max-width: 700px) {
     .CText{
         height: fit-content;
@@ -547,6 +633,7 @@
         width: 40px;
     }
 }
+
 @media screen and (max-width: 600px) {
     .CText{
         height: fit-content;
