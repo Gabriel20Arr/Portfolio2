@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import styles from "./Proyectos.module.css";
 
-import imgprev from "/img-proyectos-webp/flecha-correcta.png";
-import imgNext from "/img-proyectos-webp/flecha-correcta.png";
+import imgNext from "/flecha-correcta.png";
+import imgprev from "/flecha-izquierda.png";
 import internet from "/img-proyectos-webp/internet-Proyect.png";
 import github from "/contact/github-contact.png";
 
@@ -21,17 +21,16 @@ const projectData = [
     id: 2,
     title: "ToDoList",
     description: "Esta no es tu típica lista de tareas; es una experiencia personalizada con un sistema de inicio de sesión que te permite llevar un registro de tus tareas de manera eficiente. 💻🔐 La navegación intuitiva te guía a través de secciones como tu perfil, página principal, la opción de agregar nuevas tareas, marcar como favoritas y una útil sección de ayuda. ¡Y sí, puedes contactarme directamente por correo electrónico para cualquier pregunta o problema! 🚀📧 Cada tarea que creas viene con detalles clave: categoría, título, descripción, fecha de creación, un temporizador y un calendario con alertas para mantenerte organizado. ⏰🗓️",
-    images: ["/img-proyectos-webp/to-do.webp", "/img-proyectos-webp/to-do-2.webp"],
+    images: ["/img-proyectos-webp/to-do-2.webp", "/img-proyectos-webp/to-do.webp" ],
     webLink: "https://todolist-s3jc.onrender.com/",
     githubLink: "https://github.com/Gabriel20Arr/ToDoList"
   },
   {
     id: 3,
-    title: "Foods",
-    description: "Trata de una web donde los usuarios podrán crear sus propias recetas, realizar búsquedas, ver detalles de las recetas, navegar con un sistema de paginación y aplicar filtros de diversos tipos. También se les permitió crear nuevas recetas y compartir sus propias creaciones culinarias. ",
-    images: ["/img-proyectos-webp/Foods.webp", "/img-proyectos-webp/menuFoods.webp"],
-    webLink: "https://deploy-food-sage.vercel.app/",
-    githubLink: "https://github.com/Gabriel20Arr/Deploy-Food"
+    title: "Organizer",
+    description: "Aplicación para descargar videos y audios de YouTube usando tecnologías como web scraping y Node.js para el backend, junto con React.js en el frontend. La aplicación permite a los usuarios pegar enlaces de YouTube y obtener opciones para descargar videos en diferentes formatos y calidades.",
+    images: ["/img-proyectos-webp/project-recluiting/tablaC.jpeg", "/img-proyectos-webp/project-recluiting/tablaF.jpeg", "/img-proyectos-webp/project-recluiting/login.jpeg", "/img-proyectos-webp/project-recluiting/register.jpeg"],
+    githubLink: "https://github.com/Gabriel20Arr/Organizer-R"
   },
   {
     id: 4,
@@ -40,11 +39,22 @@ const projectData = [
     images: ["/img-proyectos-webp/downloadY-1.jpeg", "/img-proyectos-webp/downloadY-2.jpeg", "/img-proyectos-webp/downloadY-3.jpeg"],
     githubLink: "https://github.com/Gabriel20Arr/Dowload-YT.git"
   },
+  {
+    id: 5,
+    title: "Foods",
+    description: "Trata de una web donde los usuarios podrán crear sus propias recetas, realizar búsquedas, ver detalles de las recetas, navegar con un sistema de paginación y aplicar filtros de diversos tipos. También se les permitió crear nuevas recetas y compartir sus propias creaciones culinarias. ",
+    images: ["/img-proyectos-webp/Foods.webp", "/img-proyectos-webp/menuFoods.webp"],
+    webLink: "https://deploy-food-sage.vercel.app/",
+    githubLink: "https://github.com/Gabriel20Arr/Deploy-Food"
+  },
 ];
 
 export const Proyectos = () => {
   const [selectP, setSelectP] = useState(1);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [openImg, setOpenImg] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
 
   const handlerSelectProyect = (proyectos) => {
     setSelectP(proyectos);
@@ -70,14 +80,34 @@ export const Proyectos = () => {
           </button>
           {project.images.map((image, index) => (
             <div key={index} className={index === currentSlide ? styles.slideActive : styles.slide}>
-              <img src={image} alt={`Slide ${index}`} className={styles.imgP}/>
+
+              <img 
+                src={image} 
+                alt={`Slide ${index}`} 
+                className={styles.imgP} 
+                onClick={() => {
+                  setSelectedImage(image); 
+                  setOpenImg(true); 
+                }}
+              />
             </div>
           ))}
           <button className={styles.next} onClick={() => nextSlide(project.images)}>
             <img src={imgNext} alt='' className={styles.ImgBtn}/>
           </button>
         </div>
-
+        
+        {openImg && selectedImage && (
+          <div className={styles.modal} onClick={() => setOpenImg(false)}>
+            <div className={styles.modalContent}>
+              <img 
+                src={selectedImage}  
+                alt="Ampliada"                 
+              />
+            </div>
+          </div>
+        )}
+        
         <div className={styles.contenedorTitleImg}>
           <h3 className={styles.titleProyectos}>{project.title}</h3>
           <div className={styles.contenedorImgProyectos}>

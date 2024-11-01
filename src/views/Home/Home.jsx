@@ -7,36 +7,35 @@ import { Experiencia } from "../Experiencia/Experiencia";
 import { Proyectos } from "../Proyectos/Proyectos";
 import { SobreMi } from "../SobreMi/SobreMi";
 import { Contact } from "../Contact/Contact";
-
-import LocationModal from "../ModalIP/LocationModal";
+// import LocationModal from "../ModalIP/LocationModal";
 
 export const Home = () => {
-  const [region, setRegion] = useState("");
-  const [city, setCity] = useState("");
-  const [timezone, setTimezone] = useState("");
+  // const [region, setRegion] = useState("");
+  // const [city, setCity] = useState("");
+  // const [timezone, setTimezone] = useState("");
 
-  useEffect(() => {
-    // Obtener la IP del usuario
-    fetch("https://api.ipify.org?format=json")
-      .then((response) => response.json())
-      .then((data) => {
-        // Usar la IP para obtener la ubicación
-        fetch(
-          `https://geo.ipify.org/api/v2/country,city?apiKey=${
-            import.meta.env.VITE_API_KEY
-          }&ipAddress=${data.ip}`
-        )
-          .then((response) => response.json())
-          .then((locationData) => {
-            setRegion(locationData.location.region);
-            setCity(locationData.location.city);
-            setTimezone(locationData.location.timezone);
-          });
-      })
-      .catch((error) => {
-        console.error("Error al obtener la ubicación:", error);
-      });
-  }, []); // Se ejecuta una sola vez al montar el componen
+  // useEffect(() => {
+  //   // Obtener la IP del usuario
+  //   fetch("https://api.ipify.org?format=json")
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       // Usar la IP para obtener la ubicación
+  //       fetch(
+  //         `https://geo.ipify.org/api/v2/country,city?apiKey=${
+  //           import.meta.env.VITE_API_KEY
+  //         }&ipAddress=${data.ip}`
+  //       )
+  //         .then((response) => response.json())
+  //         .then((locationData) => {
+  //           setRegion(locationData.location.region);
+  //           setCity(locationData.location.city);
+  //           setTimezone(locationData.location.timezone);
+  //         });
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error al obtener la ubicación:", error);
+  //     });
+  // }, []);
 
   return (
     <div className={styles.containerHome}>
@@ -64,7 +63,9 @@ export const Home = () => {
         <Contact />
       </section>
 
-      <LocationModal region={region} city={city} timezone={timezone} />
+      {/*
+        <LocationModal region={region} city={city} timezone={timezone} />
+      */}
     </div>
   );
 };

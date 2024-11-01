@@ -2,7 +2,7 @@ import React from 'react'
 import styles from "./Experiencia.module.css"
 
 export const Experiencia = () => {
-  return (
+  return ( 
     <div id="exps" className={styles.exp}>
         <h2 className={styles.title}>Experiencia</h2>
         <div className={styles.ContainerExp}>

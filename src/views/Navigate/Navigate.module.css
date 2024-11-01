@@ -9,7 +9,7 @@
 
 /* Estilos para pantallas más grandes (mayores o igual a 390px) */
 .navbar {
-    z-index: 999;
+    z-index: 998;
 
     width: 70%;
     min-height: 5em;
