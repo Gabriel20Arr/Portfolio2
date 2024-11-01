@@ -28,7 +28,7 @@ const projectData = [
   {
     id: 3,
     title: "Organizer",
-    description: "Aplicación para descargar videos y audios de YouTube usando tecnologías como web scraping y Node.js para el backend, junto con React.js en el frontend. La aplicación permite a los usuarios pegar enlaces de YouTube y obtener opciones para descargar videos en diferentes formatos y calidades.",
+    description: "Organizer es una herramienta diseñada para que reclutadores gestionen fácilmente candidatos de diversas profesiones. Cuenta con secciones de perfil, favoritos, ayuda y un home para navegación rápida. Incluye un buscador y paginación para explorar perfiles eficientemente. Con opciones de login y registro, Organizer se convierte en una solución práctica y ordenada para optimizar el proceso de reclutamiento.",
     images: ["/img-proyectos-webp/project-recluiting/tablaC.jpeg", "/img-proyectos-webp/project-recluiting/tablaF.jpeg", "/img-proyectos-webp/project-recluiting/login.jpeg", "/img-proyectos-webp/project-recluiting/register.jpeg"],
     githubLink: "https://github.com/Gabriel20Arr/Organizer-R"
   },
