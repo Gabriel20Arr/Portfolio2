@@ -2,7 +2,7 @@
   max-width: 100%;
   height: fit-content;
 
-  padding:25px 0;
+  padding:75px 20px;
   font-size: 20px;
   font-family: "GFS Neohellenic", sans-serif;
   font-weight: 400;
@@ -24,54 +24,93 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 70px;
-    width: 100%;
     padding: 10px;
-    
+    /* background-color: #0984e3; */
     overflow: hidden;
 }
 .carouselSlide2 {
     display: flex;
     align-items: center;
-    margin: 10px;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+    padding: none;
     /* background-color: red; */
-    height: 100%;
-    max-width: 100%;
-    /* overflow: hidden; */
 }
   
-/* contenedor carrusel */
+/* Imagen del carrusel con efecto de pausa y agrandado al pasar el mouse */
 .slide2 {
-  display: flex;
-  /* justify-content: space-evenly; */
-  animation: slide 8s linear infinite;
-  margin-left: 10px;
+    display: flex;
+    align-items: center;
+    animation: slide 15s linear infinite;
+  }
+  
+  .slide2:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(-50%));
+    }
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
+/* Contenedor de la imagen */
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 10px; */
+    max-height: 120px;
+    width: fit-content;
+
+    /* border: 1px solid black; */
+    /* background-color: green; */
+    position: relative;
   }
-  100% {
-    transform: translateX(calc(-100% * 20));
-  }
-}
   
 
 /* imagenes del carrusel */
-.imgCarrusel{
-    width: 40px;
-    height: 40px;
-
-    margin-right: 20px;
-
-    object-fit: contain;
-
+.imgCarrusel {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
+
+.imgCarrusel:hover {
+    transform: scale(1.5);
+}
+
+/* Nombre de la tecnología: Oculto inicialmente */
+.imageName {
+    /* margin-top: 5px; */
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #636262;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    z-index: 10;
+}
+    
+  /* Muestra el nombre solo cuando el ratón está encima */
+  .imageContainer:hover .imageName {
+    opacity: 1;
+  }
 
 /* Estilos de la primer Portada */
 
-    @media screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) {
       .ContenedorHome{
           margin-top: 5em;
       

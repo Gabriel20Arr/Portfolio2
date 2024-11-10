@@ -3,32 +3,35 @@ import styles from "./SobreMi.module.css";
 
 export const SobreMi = () => {
   const imagenes = [
-    "/logos-tech-webp/html.webp",
-    "/logos-tech-webp/css.webp",
-    "/logos-tech-webp/tailwind.png",
-    "/logos-tech-webp/javascript_icon_130900.webp",
-    "/logos-tech-webp/react_original_logo_icon_146374.webp",
-    "/logos-tech-webp/Java.png",
-    "/logos-tech-webp/SpringBoot.png",
-    "/logos-tech-webp/express_original_wordmark_logo_icon_146528.webp",
-    "/logos-tech-webp/node.png",
-    "/logos-tech-webp/MySQL.png",
-    "/logos-tech-webp/postgresql_original_logo_icon_146391.webp",
-    "/logos-tech-webp/oracle.png",
-    "/logos-tech-webp/mongodb_original_logo_icon_146424.webp",
+    { src: '/logos-tech-webp/img-new/html.png', name: 'HTML' },
+    { src: '/logos-tech-webp/img-new/css.png', name: 'CSS' },
+    { src: '/logos-tech-webp/img-new/tailwind.png', name: 'Tailwind' },
+    { src: '/logos-tech-webp/img-new/js.png', name: 'JavaScript' },
+    { src: '/logos-tech-webp/img-new/react.png', name: 'React' },
+    { src: '/logos-tech-webp/img-new/java.png', name: 'Java' },
+    { src: '/logos-tech-webp/img-new/spring-boot.png', name: 'Spring Boot' },
+    { src: '/logos-tech-webp/img-new/express.png', name: 'Express' },
+    { src: '/logos-tech-webp/img-new/node-js.png', name: 'Node.js' },
+    { src: '/logos-tech-webp/img-new/mysql.png', name: 'MySQL' },
+    { src: '/logos-tech-webp/img-new/postgresql.png', name: 'PostgreSQL' },
+    { src: '/logos-tech-webp/img-new/oracle.png', name: 'Oracle' },
+    { src: '/logos-tech-webp/img-new/mongodb.png', name: 'MongoDB' },
+    { src: '/logos-tech-webp/img-new/npm.png', name: 'npm' },
   ];
 
   const renderImages = (imageArray) => {
     return imageArray.map((image, index) => (
-      <div key={index} className={styles.slide2}>
+      <div key={index} className={styles.imageContainer}>
         <img 
-          src={image} 
-          alt={`Slide ${index}`} 
+          src={image.src} 
+          alt={image.name} 
           className={styles.imgCarrusel} 
         />
+        <div className={styles.imageName}>{image.name}</div>
       </div>
     ));
   };
+
 
   return (
     <div id="sobre-mi" className={styles.containerS}>
@@ -50,12 +53,13 @@ export const SobreMi = () => {
       </p>
 
       <div className={styles.carouselSlide1}>
-        <div className={styles.carouselSlide2}>
-          {renderImages(imagenes)}
+        <div className={`${styles.carouselSlide2} ${styles.slide2}`}>
           {renderImages(imagenes)}
           {renderImages(imagenes)}
         </div>
       </div>
+    
     </div>
   );
 };
+

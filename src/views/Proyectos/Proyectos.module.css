@@ -504,35 +504,6 @@
         height: auto;
     }
     
-    .prev{
-        background-color: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        position: absolute;
-        left: 0;
-        top: 45%;
-        
-        rotate: 180deg;
-        
-        padding: 0;
-        margin: 0;
-    }
-    
-    .next{
-        background-color: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        position: absolute;
-        right: 0;
-        top: 45%;
-        
-        padding: 0;
-        margin: 0;
-    }
 }
 @media screen and (max-width: 950px) {
     .container{
@@ -713,8 +684,6 @@
         position: absolute;
         left: 0;
         top: 45%;
-        
-        rotate: 180deg;
         
         padding: 0;
         margin: 0;
@@ -924,8 +893,6 @@
         left: 0;
         top: 45%;
         
-        rotate: 180deg;
-        
         padding: 0;
         margin: 0;
     }
@@ -1121,8 +1088,6 @@
         position: absolute;
         left: 0;
         top: 45%;
-        
-        rotate: 180deg;
         
         padding: 0;
         margin: 0;
@@ -1338,8 +1303,6 @@
         position: absolute;
         left: 0;
         top: 45%;
-        
-        rotate: 180deg;
         
         padding: 0;
         margin: 0;
