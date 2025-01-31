@@ -37,13 +37,17 @@ export const SobreMi = () => {
     <div id="sobre-mi" className={styles.containerS}>
       <h1 className={styles.title}>Sobre Mi</h1>
       <p>
-        Como desarrollador <b>Full Stack</b> argentino, me especializo en el diseño e implementación de arquitecturas de software escalables y eficientes. Utilizo tecnologías de vanguardia tanto en el frontend como en el backend para garantizar un rendimiento óptimo y una experiencia de usuario excepcional.
+        Apasionado por el desarrollo de software y la innovación tecnológica, soy una persona 
+        aplicada y comprometida, orientada a obtener resultados de calidad en todo lo que 
+        emprendo. Mi enfoque se centra en obtener resultados de calidad y colaborar de manera 
+        efectiva en equipos multidisciplinarios.
         <br />
         <br />
         En el <b>frontend</b>, desarrollo interfaces atractivas y receptivas utilizando bibliotecas modernas como React.js y Next.js, junto con prácticas avanzadas de CSS para estilos limpios y mantenibles.
         <br />
         <br />
-        En el <b>backend</b>, trabajo con tecnologías como Node.js, Express.js y Redux para crear APIs robustas y eficientes. Tengo experiencia en bases de datos relacionales como PostgreSQL y no relacionales como MongoDB, así como en la optimización de consultas y gestión de la persistencia de datos.
+        En el <b>backend</b>, especializado en Java, Spring Boot, JDBC y bases de datos 
+        relacionales y no relacionales. Apasionado por la arquitectura y optimización de sistemas. 
         <br/>
         <br/>
         Además, poseo habilidades sólidas en el <b>despliegue</b> y gestión de aplicaciones en entornos de producción.

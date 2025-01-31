@@ -6,26 +6,37 @@ export const Experiencia = () => {
     <div id="exps" className={styles.exp}>
         <h2 className={styles.title}>Experiencia</h2>
         <div className={styles.ContainerExp}>
-            <div className={styles.CExp1}>
-              <span className={styles.spanR}></span>
-              <span className={styles.titleExp}>Freelancer <span className={styles.date}>10 May - Actualidad</span></span>
-              Durante mi trayectoria como freelancer, he tenido la oportunidad de trabajar en una variedad de proyectos para clientes. Esto incluye la creación de sitios web completos, donde me encargué del desarrollo del frontend, backend y el despliegue. Por ejemplo, he desarrollado una plataforma de gestión de tareas completamente personalizada, adaptada a las necesidades específicas del cliente.
-            </div>
-            <br />
+          <div className={styles.ContainerExpLine}>
+              <div className={styles.CExp1}>
+                <span className={styles.spanR}></span>
+                <span className={styles.titleExp}>Experiencia laboral - Grupo Consiti<span className={styles.date}>Junio, 2024 - Enero, 2025</span></span>
+                - Desarrollo de tabla dinámica con carga de archivos Excel y CSV, filtros, búsquedas,
+                enrutamientos, traducion y diseño. Facilitando al usuario la organización y legibilidad de los datos cargados. <br/>
+                - Consumo de diferentes apis priorizando optimización y escalabilidad del proyecto.<br/>
+                - Me encargue del manejo de errores para una navegación correcta.<br/>
+                - Realizacion de documentación y versionamiento de los cambios realizados.<br/>
+                - Desarrollo de api rest para encabezados dinámicos divido por categoria.<br/>
+                - Implementación de la lógica de negocio para la carga de archivos Excel y CSV.<br/> 
+                - Mantenimiento y optimización de bases de datos SQL para mejorar la eficiencia y 
+                rendimiento.<br/> 
+                - Manejo y análisis de grandes volúmenes de datos.<br/>
+                - Tecnologías:<br/> 
+                React - JavaScrit - HTML - Redux - Tailwind - Java - SpringBoot - MongoDB - SQL - Hibernete - PL-SQL (Oracle) 
+              </div>
+              <br />
 
 
-            <div className={styles.CExp1}>
-              <span className={styles.spanR}></span>
-              <span className={styles.titleExp}>Academia<span className={styles.date}>14 feb - 10 Jul</span></span>
-              Durante mi tiempo en la academia, he tenido la oportunidad de participar en varios proyectos Full Stack. Uno de los más significativos fue el desarrollo de un Market Place, en el cual colaboré con un equipo de 6 personas. Mi rol abarcó el desarrollo del frontend, backend y la implementación de la plataforma. Además, he tenido la oportunidad de trabajar en dos proyectos adicionales de manera individual, donde me encargué de todas las etapas del proceso, desde el diseño hasta el despliegue de la web.
-            </div>
-            <br />
-
-            <div className={styles.CExp1}>
-              <span className={styles.spanR}></span>
-              <span className={styles.titleExp}>Personal <span className={styles.date}>10 jul - Actualidad</span></span>
-              Durante mi tiempo libre, me dediqué a desarrollar varios proyectos con el objetivo de seguir aprendiendo. Uno de ellos surgió a partir de una conversación con un reclutador de IT, quien mencionaba tener dificultades para recordar a todos los candidatos. Decidí crear una aplicación web que permitiera almacenar información sobre los candidatos para futuras oportunidades laborales, con la capacidad de filtrarlos según las necesidades específicas de cada puesto.
-            </div>
+              <div className={styles.CExp1}>
+                <span className={styles.spanR}></span>
+                <span className={styles.titleExp}>Freelancer<span className={styles.date}>Enero, 2021 - Actualidad</span></span>
+                - Desarrollo de landing page, Ecommerce, dashboard y aplicaciones Full Stack utilizando: <br/>
+                "React - Next.js - JavaScript - Css - HTML - Java -SpringBoot - Express - PostgreSQL - Tailwind - MongoDB -Oracle". <br/>
+                - Diseñar interfaces, mantener y optimizar sitios web e interfaces. <br/>
+                - Correcciones de Bugs.<br/>
+                - Diseño de bases de datos y su implementación. 
+              </div>
+              <br />
+          </div>
         </div>
     </div>
   )

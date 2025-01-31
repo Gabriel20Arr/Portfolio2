@@ -19,6 +19,13 @@ const projectData = [
   },
   {
     id: 2,
+    title: "BlackList",
+    description: "Proyecto diseñado para entidades bancarias, cuyo objetivo es registrar, optimizar y organizar información a través de varios sistemas. Sus principales funciones es la implementación de funcionalidades para la carga de archivos PDF, Excel, CSV y formularios manuales, el desarrollo de herramientas para análisis automatizado de archivos mediante IA, la gestión del seguimiento de clientes, empleados y proveedores. Por cuestiones de privacidad no puedo exponer el link del reposotorio del proyecto.",
+    images: ["/img-proyectos-webp/project-BlackList/Daisy-UI-1.png", "/img-proyectos-webp/project-BlackList/Daisy-UI-2.png", "/img-proyectos-webp/project-BlackList/Daisy-UI-3.png", "/img-proyectos-webp/project-BlackList/Daisy-UI-4.png", "/img-proyectos-webp/project-BlackList/Daisy-UI-5.png"],
+    githubLink: "https://github.com/Gabriel20Arr"
+  },
+  {
+    id: 3,
     title: "ToDoList",
     description: "Esta no es tu típica lista de tareas; es una experiencia personalizada con un sistema de inicio de sesión que te permite llevar un registro de tus tareas de manera eficiente. 💻🔐 La navegación intuitiva te guía a través de secciones como tu perfil, página principal, la opción de agregar nuevas tareas, marcar como favoritas y una útil sección de ayuda. ¡Y sí, puedes contactarme directamente por correo electrónico para cualquier pregunta o problema! 🚀📧 Cada tarea que creas viene con detalles clave: categoría, título, descripción, fecha de creación, un temporizador y un calendario con alertas para mantenerte organizado. ⏰🗓️",
     images: ["/img-proyectos-webp/to-do-2.webp", "/img-proyectos-webp/to-do.webp" ],
@@ -26,26 +33,18 @@ const projectData = [
     githubLink: "https://github.com/Gabriel20Arr/ToDoList"
   },
   {
-    id: 3,
+    id: 4,
     title: "Organizer",
     description: "Organizer es una herramienta diseñada para que reclutadores gestionen fácilmente candidatos de diversas profesiones. Cuenta con secciones de perfil, favoritos, ayuda y un home para navegación rápida. Incluye un buscador y paginación para explorar perfiles eficientemente. Con opciones de login y registro, Organizer se convierte en una solución práctica y ordenada para optimizar el proceso de reclutamiento.",
     images: ["/img-proyectos-webp/project-recluiting/tablaC.jpeg", "/img-proyectos-webp/project-recluiting/tablaF.jpeg", "/img-proyectos-webp/project-recluiting/login.jpeg", "/img-proyectos-webp/project-recluiting/register.jpeg"],
     githubLink: "https://github.com/Gabriel20Arr/Organizer-R"
   },
   {
-    id: 4,
+    id: 5,
     title: "Download Youtube",
     description: "Aplicación para descargar videos y audios de YouTube usando tecnologías como web scraping y Node.js para el backend, junto con React.js en el frontend. La aplicación permite a los usuarios pegar enlaces de YouTube y obtener opciones para descargar videos en diferentes formatos y calidades.",
     images: ["/img-proyectos-webp/downloadY-1.jpeg", "/img-proyectos-webp/downloadY-2.jpeg", "/img-proyectos-webp/downloadY-3.jpeg"],
     githubLink: "https://github.com/Gabriel20Arr/Dowload-YT.git"
-  },
-  {
-    id: 5,
-    title: "Foods",
-    description: "Trata de una web donde los usuarios podrán crear sus propias recetas, realizar búsquedas, ver detalles de las recetas, navegar con un sistema de paginación y aplicar filtros de diversos tipos. También se les permitió crear nuevas recetas y compartir sus propias creaciones culinarias. ",
-    images: ["/img-proyectos-webp/Foods.webp", "/img-proyectos-webp/menuFoods.webp"],
-    webLink: "https://deploy-food-sage.vercel.app/",
-    githubLink: "https://github.com/Gabriel20Arr/Deploy-Food"
   },
 ];
 
@@ -150,6 +149,13 @@ export const Proyectos = () => {
           {renderProject(projectData.find((project) => project.id === selectP))}
         </div>
       </div>
+      {/*
+      <div className='bg-blue-400 w-full text-center mt-5 hover:bg-blue-200 cursor-pointer'>
+        <Link to="/moreProject">
+          Ver mas...
+        </Link>
+      </div>
+      */}
     </div>
   );
 };

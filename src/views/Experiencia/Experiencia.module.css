@@ -15,22 +15,30 @@
     align-items: center;
 }
 
+.ContainerExpLine{
+    max-width: 100%;
+    max-height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-left: 1px solid #202020;
+    
+}
+
 .title{
     color: #0984e3;
     font-weight: bolder;
     font-size: 40px;
     font-family: "Karantina", system-ui;
     font-style: normal;
-  
-    /* margin: 0; */
 }
 
 .CExp1{
-    /* background-color: greenyellow; */
-    border-left: 1px solid #eeee;
     padding-left: 10px;
     
-    max-width: 100%;
+    width: 100%;
     height: fit-content;
     
     display: flex;
@@ -47,18 +55,16 @@
 .spanR{
     position: absolute;
     top: 13px;
-    left: -6px;
+    left: -0.3rem;
     
-    background-color: #eeee;
+    background-color: #202020;
     border-radius: 50%;
-
     
     height: 10px;
     width: 10px;
 }
 
 .titleExp {
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,12 +76,12 @@
 
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .date{
     font-weight: none;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .parrafoExp{
@@ -127,7 +133,24 @@
         font-size: 30px;
         font-family: "Karantina", system-ui;
         font-style: normal;
-      
-        /* margin: 0; */
     }
+.titleExp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-width: 100%;
+
+    margin: none;
+    padding: none;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.date{
+    font-weight: none;
+    font-size: 11px;
+}
 }
