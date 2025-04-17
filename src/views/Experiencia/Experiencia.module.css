@@ -89,6 +89,42 @@
     padding-left: 12px;
 }
 
+.ContainerCarta{
+ width: 100%;
+ height: 50px;
+
+ margin: 15px 0px;
+ margin-left: 15px;
+ 
+ display: flex;
+ align-items: center;
+ justify-content: start;
+}
+
+.btnCarta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: #fff;
+    color: #000;
+    width: fit-content;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+.btnCarta:hover{
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #0984e3;
+    color: #0984e3;
+    
+    transition: all 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 1275px) {
     .title{
         color: #0984e3;

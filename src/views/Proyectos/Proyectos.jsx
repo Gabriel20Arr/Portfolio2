@@ -26,6 +26,37 @@ const projectData = [
   },
   {
     id: 3,
+    title: "Tu Mate",
+    description: `Tu Mate es una aplicación web de e-commerce enfocada en la venta de productos artesanales, especialmente mates y accesorios. Desarrollada con Spring Boot (backend) y React + Tailwind CSS (frontend), permite a los usuarios explorar, filtrar y comprar productos desde cualquier dispositivo.
+
+    Principales funcionalidades:
+    - 🔐 Autenticación y autorización de usuarios
+    - 🛍️ Gestión de productos (CRUD completo para administradores)
+    - 📦 Experiencia de usuario optimizada: carrusel de productos destacados, productos aleatorios en vista previa, información institucional y guía de compra
+    - 🛒 Compra rápida con stock y precios actualizados
+    - 🧑‍💼 Panel administrativo para gestión eficiente
+    `,
+    images: [
+      "/img-proyectos-webp/tuMate/Homeparte1.png",
+      "/img-proyectos-webp/tuMate/ProductosDestacados.png",
+      "/img-proyectos-webp/tuMate/Productos.png",
+      "/img-proyectos-webp/tuMate/Carritodecompras.png",
+      "/img-proyectos-webp/tuMate/DetalleProducto.png",
+      "/img-proyectos-webp/tuMate/Adminpart1.png",
+      "/img-proyectos-webp/tuMate/Admin2-GestionProductos.png",
+      "/img-proyectos-webp/tuMate/FromCreateProduct.png",
+      "/img-proyectos-webp/tuMate/FormCreateProduct2.png",
+      "/img-proyectos-webp/tuMate/FormEditProduct.png",
+      "/img-proyectos-webp/tuMate/FormEditProduct2.png",
+      "/img-proyectos-webp/tuMate/PerfilUsuario.png",
+      "/img-proyectos-webp/tuMate/SobreNosotros.png",
+      "/img-proyectos-webp/tuMate/Login.png",
+      "/img-proyectos-webp/tuMate/Register.png",
+    ],
+    githubLink: "https://github.com/Gabriel20Arr/app-react-springboot"
+  },
+  {
+    id: 4,
     title: "ToDoList",
     description: "Esta no es tu típica lista de tareas; es una experiencia personalizada con un sistema de inicio de sesión que te permite llevar un registro de tus tareas de manera eficiente. 💻🔐 La navegación intuitiva te guía a través de secciones como tu perfil, página principal, la opción de agregar nuevas tareas, marcar como favoritas y una útil sección de ayuda. ¡Y sí, puedes contactarme directamente por correo electrónico para cualquier pregunta o problema! 🚀📧 Cada tarea que creas viene con detalles clave: categoría, título, descripción, fecha de creación, un temporizador y un calendario con alertas para mantenerte organizado. ⏰🗓️",
     images: ["/img-proyectos-webp/to-do-2.webp", "/img-proyectos-webp/to-do.webp" ],
@@ -33,14 +64,14 @@ const projectData = [
     githubLink: "https://github.com/Gabriel20Arr/ToDoList"
   },
   {
-    id: 4,
+    id: 5,
     title: "Organizer",
     description: "Organizer es una herramienta diseñada para que reclutadores gestionen fácilmente candidatos de diversas profesiones. Cuenta con secciones de perfil, favoritos, ayuda y un home para navegación rápida. Incluye un buscador y paginación para explorar perfiles eficientemente. Con opciones de login y registro, Organizer se convierte en una solución práctica y ordenada para optimizar el proceso de reclutamiento.",
     images: ["/img-proyectos-webp/project-recluiting/tablaC.jpeg", "/img-proyectos-webp/project-recluiting/tablaF.jpeg", "/img-proyectos-webp/project-recluiting/login.jpeg", "/img-proyectos-webp/project-recluiting/register.jpeg"],
     githubLink: "https://github.com/Gabriel20Arr/Organizer-R"
   },
   {
-    id: 5,
+    id: 6,
     title: "Download Youtube",
     description: "Aplicación para descargar videos y audios de YouTube usando tecnologías como web scraping y Node.js para el backend, junto con React.js en el frontend. La aplicación permite a los usuarios pegar enlaces de YouTube y obtener opciones para descargar videos en diferentes formatos y calidades.",
     images: ["/img-proyectos-webp/downloadY-1.jpeg", "/img-proyectos-webp/downloadY-2.jpeg", "/img-proyectos-webp/downloadY-3.jpeg"],

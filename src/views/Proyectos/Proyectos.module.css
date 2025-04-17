@@ -180,7 +180,6 @@
     border-radius: 10px;
     padding: 10px;
 
-    background-color: #fff;
 
     -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
@@ -197,13 +196,10 @@
     
     border-radius: 10px;
     border: none;
-    background-color: white;
 
-    transition: transform 0.5s ease-in-out;
 }
 
 .Btn:hover{
-    transform: scale(1.2);
     cursor: pointer;
 }
 
@@ -433,34 +429,27 @@
         justify-content: center;
     
         border-radius: 10px;
-        padding: 10px;
+        padding: 5px;
         border: none;
 
-        background-color: #fff;
+        /* background-color: #fff; */
     }
     
     .Btn{
-        padding: 0;
-        margin: 0;
-        margin-bottom: 10px;
+        margin: 5px 0;
 
         display: flex;
         justify-content: center;
         align-items: center;
         
-        width: 75px;
-        height: 50px;
+        width: 55px;
+        height: auto;
         
-        border-radius: 10px;
+        border-radius: 5px;
         border: none;
-
-        background-color: white;
-        
-        transition: transform 0.5s ease-in-out;
     }
     
     .Btn:hover{
-        transform: scale(1.2);
         cursor: pointer;
     }
     
@@ -471,7 +460,6 @@
     
         border-radius: 10px;
         border: 1px solid gray;
-        /* background-color: blue; */
     }
     
     
@@ -481,7 +469,6 @@
         height: auto;
     
         border-radius: 10px;
-        /* border: 1px solid black; */
     }
     
     /* carrusel */
@@ -582,9 +569,9 @@
         gap: 5px;
         
         min-height: 350px;
-        max-width: 360px;
+        min-width: 360px;
     
-        padding: 10px;
+        padding: 5px;
         
         border-radius: 20px;
     }
@@ -597,52 +584,45 @@
         justify-content: center;
     
         border-radius: 10px;
-        padding: 10px;
+        padding: 5px;
 
+        height: fit-content;
+        max-width: 130px;
+        
     }
     
     .Btn{
-        padding: 0;
-        margin: 0;
-        margin-bottom: 10px;
+        margin: 5px 0;
 
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        gap: 5px;
         
-        width: 75px;
-        height: 50px;
+        max-width: auto;
+        max-height: auto;
         
-        border-radius: 10px;
         border: none;
-
-        background-color: white;
-        
-        transition: transform 0.5s ease-in-out;
     }
     
     .Btn:hover{
-        transform: scale(1.2);
         cursor: pointer;
     }
     
     .imgB{
-        
-        width: 75px;
-        height: 50px;
+        max-width: 50px;
+        max-height: 40px;
     
         border-radius: 10px;
         border: 1px solid gray;
-        /* background-color: blue; */
     }
     
     
     /* Imagenes de los proyectos */
     .imgP{
-        width: 360px;
-        height: 200px;
-    
-        /* margin-bottom: 10px; */
+        width: 100%;
+        height: 100%;
     
         border-radius: 10px;
         /* border: 1px solid black; */
@@ -660,7 +640,7 @@
     .carouselSlide {
         display: flex;
         overflow: hidden;
-        width: 400px; 
+        max-width: auto; 
         max-height: fit-content;
         
         /* border: 1px solid black; */
@@ -801,40 +781,32 @@
         align-items: center;
         justify-content: center;
     
-        border-radius: 10px;
         padding: 10px;
 
+        max-width: 100px;
+        height: auto;
     }
     
     .Btn{
         padding: 0;
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
 
         display: flex;
         justify-content: center;
         align-items: center;
         
-        width: 75px;
-        height: 50px;
-        
-        border-radius: 10px;
-        border: none;
-
-        background-color: white;
-        
-        transition: transform 0.5s ease-in-out;
+        height: auto;
     }
     
     .Btn:hover{
-        transform: scale(1.2);
         cursor: pointer;
     }
     
     .imgB{
         
-        width: 75px;
-        height: 50px;
+        width: 55px;
+        height: 40px;
     
         border-radius: 10px;
         border: 1px solid gray;
@@ -1008,7 +980,6 @@
         align-items: center;
     
         margin-top: 10px;
-
         width: 320px;
     }
     
@@ -1022,13 +993,9 @@
         border-radius: 10px;
         border: none;
 
-        background-color: white;
-        
-        transition: transform 0.5s ease-in-out;
     }
     
     .Btn:hover{
-        transform: scale(1.1);
         cursor: pointer;
     }
     
@@ -1239,14 +1206,9 @@
         
         border-radius: 10px;
         border: none;
-
-        background-color: white;
-        
-        transition: transform 0.5s ease-in-out;
     }
     
     .Btn:hover{
-        transform: scale(1.1);
         cursor: pointer;
     }
     

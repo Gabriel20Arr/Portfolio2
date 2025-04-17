@@ -9,7 +9,7 @@ export const Experiencia = () => {
           <div className={styles.ContainerExpLine}>
               <div className={styles.CExp1}>
                 <span className={styles.spanR}></span>
-                <span className={styles.titleExp}>Experiencia laboral - Grupo Consiti<span className={styles.date}>Junio, 2024 - Enero, 2025</span></span>
+                <span className={styles.titleExp}>Experiencia laboral - Grupo Consiti<span className={styles.date}>Junio, 2024 - Febrero, 2025</span></span>
                 - Desarrollo de tabla dinámica con carga de archivos Excel y CSV, filtros, búsquedas,
                 enrutamientos, traducion y diseño. Facilitando al usuario la organización y legibilidad de los datos cargados. <br/>
                 - Consumo de diferentes apis priorizando optimización y escalabilidad del proyecto.<br/>
@@ -23,7 +23,16 @@ export const Experiencia = () => {
                 - Tecnologías:<br/> 
                 React - JavaScrit - HTML - Redux - Tailwind - Java - SpringBoot - MongoDB - SQL - Hibernete - PL-SQL (Oracle) 
               </div>
-              <br />
+              
+              <div className={styles.ContainerCarta}>
+                <a
+                  href="/GabrielArroyo-2025-02-04.pdf "
+                  download="Gabriel Arroyo - Carta de Recomendacion Laboral" 
+                  className={styles.btnCarta}
+                >
+                  Carta de Recomendacion Laboral
+                </a>
+              </div>
 
 
               <div className={styles.CExp1}>
